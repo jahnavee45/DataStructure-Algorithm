@@ -13,8 +13,9 @@ public class checkIfSorted {
         
         return 1;
     }
+
     public static void main(String[] args) {
-        int[] arr = { 1, 2, 4, 3 };
+        int[] arr = { 1, 2, 4, 5 };
         int n = arr.length;
         int res = checkSorted(arr, n);
         if(res == 0) {
