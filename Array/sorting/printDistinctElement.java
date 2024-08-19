@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class printDistinctElement {
     static void findDistinct(int[] arr, int n){
         HashMap<Integer, Integer> map = new HashMap<>();
-        System.out.print("\nDistinct element after eleminating: ");
+        System.out.print("\nPrinting Distinct element after eleminating: ");
         for(int i = 0; i < n; i++){
             if(!map.containsKey(arr[i])){
                 map.put(arr[i], i);
@@ -15,7 +15,7 @@ public class printDistinctElement {
     }
 
     static void findDistinctSorting(int[] arr, int n){
-        System.out.print("\nDistinct element after sorting & eleminating: ");
+        System.out.print("\nPrinting Distinct element after sorting & eleminating: ");
         for(int i = 0; i < n; i++){
             int min_ele = i;
             for(int j = i+1; j < n; j++){
