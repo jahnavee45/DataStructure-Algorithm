@@ -1,22 +1,17 @@
-package sorting;
-
-public class bubbleSort {
-
-    static void sortOperation(int[] arr, int n) {
-        int temp;
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n-1; j++) {
-                if (arr[j] > arr[j + 1]) {
-                    temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                }
+public class insertionSort {
+    static void sortOperation(int[] arr, int n){
+        for(int i = 1; i < n; i++){
+            int key = arr[i];
+            int j = i-1;
+            while(j >= 0 && arr[j] > key){
+                arr[j+1] = arr[j];
+                j = j-1;
             }
+            arr[j+1] = key;
         }
     }
-
     public static void main(String[] args) {
-        int[] arr = { 3, 2, 5, 7, 1, 8, 6, 4};
+        int[] arr = { 3, 2, 5, 7, 1, 8, 6, 4 };
         int n = arr.length;
 
         System.out.print("Before sorting: ");
@@ -30,5 +25,4 @@ public class bubbleSort {
             System.out.print(arr[i] + " ");
         }
     }
-
 }

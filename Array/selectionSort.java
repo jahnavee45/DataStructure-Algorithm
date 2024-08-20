@@ -1,15 +1,16 @@
-package sorting;
+public class selectionSort {
 
-public class insertionSort {
     static void sortOperation(int[] arr, int n){
-        for(int i = 1; i < n; i++){
-            int key = arr[i];
-            int j = i-1;
-            while(j >= 0 && arr[j] > key){
-                arr[j+1] = arr[j];
-                j = j-1;
+        for(int i = 0; i < n; i++){
+            int min_ele = i;
+            for(int j = i+1; j < n; j++){
+                if(arr[min_ele] > arr[j]){
+                    min_ele = j;
+                }
             }
-            arr[j+1] = key;
+            int temp = arr[min_ele];
+            arr[min_ele] = arr[i];
+            arr[i] = temp;
         }
     }
     public static void main(String[] args) {
