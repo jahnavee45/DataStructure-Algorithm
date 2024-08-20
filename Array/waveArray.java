@@ -1,10 +1,9 @@
+public class waveArray {
 
-public class alternativeSorting {
-
-    static void sortingOperation(int[] arr, int n){
-        for(int i = 0; i < n ; i++){
+    static void sortOperation(int[] arr, int n){
+        for(int i = 0; i < n; i++){
             int min_ele = i;
-            for(int j = i + 1; j < n; j++){
+            for(int j = i+1; j < n; j++){
                 if(arr[min_ele] > arr[j]){
                     min_ele = j;
                 }
@@ -13,28 +12,26 @@ public class alternativeSorting {
             arr[min_ele] = arr[i];
             arr[i] = temp;
         }
-    }
 
+        for(int i = 0; i < n-1; i+=2){
+            int temp = arr[i];
+            arr[i] = arr[i+1];
+            arr[i+1] = temp;
+        }
+    }
     public static void main(String[] args) {
-        int [] arr = {3, 2, 5, 7, 1, 8, 6, 4};
+        int[] arr = { 3, 2, 5, 7, 1, 8, 6, 4 };
         int n = arr.length;
 
         System.out.print("Before sorting: ");
-        for(int  i = 0; i < n; i++){
+        for (int i = 0; i < n; i++) {
             System.out.print(arr[i] + " ");
         }
 
-        sortingOperation(arr, n);
-
+        sortOperation(arr, n);
         System.out.print("\nAfter sorting: ");
-        int i = 0, j = n-1;
-        while(i < j){
-                System.out.print(arr[j--] + " ");
-                System.out.print(arr[i++] + " ");
-        }
-        if(n % 2 != 0){
+        for (int i = 0; i < n; i++) {
             System.out.print(arr[i] + " ");
         }
-        
     }
 }
