@@ -20,7 +20,7 @@ public class mergeSort {
         
     }
     public static void main(String[] args) {
-        int[] a1 = {1, 2, 3, 4};
+        int[] a1 = {1, 2, 3};
         int[] a2 = {2, 3, 5, 6, 7};
         int n = a1.length;
         int m = a2.length;
