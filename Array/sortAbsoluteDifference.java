@@ -1,4 +1,4 @@
-public class sortAbsoluteDiiference {
+public class sortAbsoluteDifference {
 
     static void sortOperation(int[] arr, int n, int x){
         int[] arr2 = new int[n];
