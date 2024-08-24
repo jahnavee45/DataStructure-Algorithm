@@ -13,6 +13,7 @@ public class unionIntersection {
         return k;
     }
     static void findUnion(int[] a1, int m, int[] a2, int n, int[] a3){
+        // HashMap<Integer, Integer> map = new HashMap<>();
         
         int i = m-1;
         int j = n-1;
@@ -29,6 +30,16 @@ public class unionIntersection {
         if(i >= 0){
             a3[k--] = a1[i--];
         }
+
+        // int b = 0;
+        // for(int a = 0; a < k; a++){
+        //     if(!map.containsKey(a3[a])){
+        //         map.put(a3[a], a);
+        //         a3[b++] = a3[a];
+        //     }
+        // }
+
+        // return k;
 
     }
     public static void main(String[] args) {
