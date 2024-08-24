@@ -1,6 +1,19 @@
 public class unionIntersection {
 
+    static int findIntersection(int[] a1, int m, int[] a2, int n){
+        int k = 0;
+        for(int i = 0; i < m; i++){
+            for(int  j = 0; j < n; j++){
+                if(a1[i] == a2[j]){
+                    a1[k++] = a1[i]; 
+                }
+            }
+        }
+        
+        return k;
+    }
     static void findUnion(int[] a1, int m, int[] a2, int n, int[] a3){
+        
         int i = m-1;
         int j = n-1;
         int k = m+n-1;
@@ -35,9 +48,17 @@ public class unionIntersection {
         }
 
         findUnion(a1, m, a2, n, a3);
+
         System.out.print("\nAfter Union: ");
-        for(int i = 0; i < m+n; i++){
+        for(int i = 0; i < a3.length; i++){
             System.out.print(a3[i] + " ");
+        }
+
+        int j = findIntersection(a1, m , a2, n);
+
+        System.out.print("\nAfter Intersection: ");
+        for(int i = 0; i < j; i++){
+            System.out.print(a1[i] + " ");
         }
     }
 }
