@@ -14,9 +14,6 @@ public class mergeSort {
         if(i >= 0){
             a3[k--] = a1[i--];
         }
-        if(j >= 0){
-            a3[k--] = a2[j--];
-        }
         
     }
     public static void main(String[] args) {
