@@ -1,24 +1,21 @@
 public class leadersArray {
 
-    static int findLeaders(int[] a, int n){
-        int i = 0;
-        for(int j = 0; j < n-1; j++){
-            if(a[j] < a[j+1]){
-                a[i++] = a[j+1];
+    static void findLeaders(int[] a, int n){
+        for (int i = 0; i < n; i++) {
+            int j;
+            for (j = i + 1; j < n; j++) {
+                if (a[i] <= a[j])
+                    break;
             }
+            if (j == n) // the loop didn't break
+                System.out.print(a[i] + " ");
         }
-        a[i++] = a[n-1];
-        return i;
     }
     public static void main(String[] args) {
-        int[] a = {16, 17, 4, 3, 5, 2};
+        int[] a = {1, 2, 3, 4, 5, 2};
         int n = a.length;
 
-        int j = findLeaders(a, n);
-
         System.out.print("\nLeaders are: ");
-        for (int i = 0; i < j; i++) {
-            System.out.print(a[i] + " ");  
-        }
+        findLeaders(a, n);
     }
 }
