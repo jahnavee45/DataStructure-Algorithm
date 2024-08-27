@@ -2,9 +2,8 @@ public class sumOfNTerms {
 
     static int findMissingTerm(int[] a, int n){
         int sum = 0, arrSum = 0;
-        for(int i = 1; i <= n; i++){
-            sum += i;
-        }
+        
+        sum = (n * (n + 1)) / 2;
 
         for(int i = 0; i < n-1; i++){
             arrSum += a[i];
