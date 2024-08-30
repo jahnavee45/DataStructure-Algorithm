@@ -10,6 +10,22 @@ class Node{
 
 public class insertAtEndNode {
 
+    static Node insertNewElement(Node head, int data){
+        Node newNode = new Node(data);
+
+        if(head == null){
+            return newNode;
+        }
+
+        Node end = head;
+        while(end.next != null){
+            end = end.next;
+        }
+
+        end.next = newNode;
+        return head;
+    }
+
     static void printList(Node head){
         Node curr = head;
 
@@ -26,6 +42,11 @@ public class insertAtEndNode {
         head.next.next.next = new Node(10);
 
         System.out.print("Before insertion: ");
+        printList(head);
+
+        int data = 12;
+        head = insertNewElement(head, data);
+        System.out.print("\nAfter insertion: ");
         printList(head);
         
     }
