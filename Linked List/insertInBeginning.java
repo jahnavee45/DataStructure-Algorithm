@@ -10,6 +10,12 @@ class Node{
 
 public class insertInBeginning {
 
+    static Node insertNewElement(Node head, int data){
+        Node newNode = new Node(data);
+        newNode.next = head;
+        return newNode;
+    }
+
     static void printList(Node head){
         Node curr = head;
 
@@ -25,6 +31,11 @@ public class insertInBeginning {
         head.next.next.next = new Node(5);
 
         System.out.print("Before insertion: ");
+        printList(head);
+
+        int data = 1;
+        head = insertNewElement(head, data);
+        System.out.print("\nAfter insertion: ");
         printList(head);
     }
 }
