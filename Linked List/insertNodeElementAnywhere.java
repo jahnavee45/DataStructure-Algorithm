@@ -27,13 +27,13 @@ public class insertNodeElementAnywhere {
         }
 
         if(curr == null){
-            System.out.println("Position is out of bound");
+            System.out.print("\nPosition is out of bound");
             return head;
         }
 
         newNode.next = curr.next;
         curr.next = newNode;
-        
+
         return head;
     }
     static void printList(Node head){
@@ -53,7 +53,7 @@ public class insertNodeElementAnywhere {
         System.out.print("Before insertion: ");
         printList(head);
 
-        int data = 3, pos = 4;
+        int data = 6, pos = 5;
         head = insertElement(head, data, pos);
         System.out.print("\nAfter insertion: ");
         printList(head);
