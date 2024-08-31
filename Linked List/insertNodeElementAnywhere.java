@@ -53,7 +53,7 @@ public class insertNodeElementAnywhere {
         System.out.print("Before insertion: ");
         printList(head);
 
-        int data = 6, pos = 5;
+        int data = 6, pos = 1;
         head = insertElement(head, data, pos);
         System.out.print("\nAfter insertion: ");
         printList(head);
