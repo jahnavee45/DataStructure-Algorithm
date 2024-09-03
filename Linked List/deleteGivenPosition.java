@@ -10,6 +10,32 @@ class Node{
 
 public class deleteGivenPosition {
 
+    static Node deleteNode(Node head, int pos){
+        Node temp = head;
+        Node prev = null;
+        if(temp == null){
+            return head;
+        }
+
+        if(pos == 1){
+            head = temp.next;
+            return head;
+        }
+
+        for(int i = 1; i < pos && temp != null; i++){
+            prev = temp;
+            temp = temp.next;
+        }
+
+        if(temp != null){
+            prev.next = temp.next;
+        }
+        else{
+            System.out.print("\n Position not found");
+        }
+        return head;
+    }
+
     static void printList(Node head){
         Node curr = head;
 
@@ -27,6 +53,12 @@ public class deleteGivenPosition {
 
         System.out.print("Before deletion: ");
         printList(head);
+
+        int pos = 2;
+        head = deleteNode(head, pos);
+        System.out.print("\nAfter Deletion: ");
+        printList(head);
+
     }
     
 }
