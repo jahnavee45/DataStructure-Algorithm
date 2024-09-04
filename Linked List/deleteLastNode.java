@@ -11,6 +11,25 @@ class Node{
 
 public class deleteLastNode {
 
+    static Node deleteEndNode(Node head){
+
+        if(head == null){
+            return null;
+        }
+
+        if(head.next == null){
+            return null;
+        }
+
+        Node last = head;
+        while(last.next.next != null){
+            last = last.next;
+        }
+
+        last.next = null;
+        return head;
+    }
+
     static void printList(Node head){
         Node curr = head;
         while(curr !=  null){
@@ -26,6 +45,10 @@ public class deleteLastNode {
         head.next.next.next = new Node(9);
 
         System.out.print("Before deletion: ");
+        printList(head);
+
+        deleteEndNode(head);
+        System.out.print("\nAfter deletion: ");
         printList(head);
     }
     
