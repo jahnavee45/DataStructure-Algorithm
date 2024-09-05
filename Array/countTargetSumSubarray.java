@@ -7,6 +7,7 @@ public class countTargetSumSubarray {
         for(int i = 0; i < a.length; i++){
             if(!map.containsKey(target - a[i])){
                 map.put(a[i], i);
+            }else{
                 count++;
             }
         }
