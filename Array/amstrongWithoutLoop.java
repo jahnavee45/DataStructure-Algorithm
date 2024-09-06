@@ -9,7 +9,7 @@ public class amstrongWithoutLoop {
         return returnArmstrong(n/10, sum);
     }
     public static void main(String[] args) {
-        int n = 154;
+        int n = 153;
         int sum = 0;
         int res = returnArmstrong(n, sum);
 
