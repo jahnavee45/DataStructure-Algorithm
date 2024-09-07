@@ -10,6 +10,15 @@ class Node{
 
 public class countLength {
 
+    static int totalLength(Node head){
+        int count = 0;
+        while (head != null) {
+            head = head.next;
+            count++;
+        }
+        return count;
+    }
+
     static void  printList(Node head){
         while (head != null) {
             System.out.print(head.data + " ");
@@ -24,5 +33,8 @@ public class countLength {
 
         System.out.print("Printing list: ");
         printList(head);
+
+        int count = totalLength(head);
+        System.out.print("\n Total length of the list is: " + count);
     }
 }
