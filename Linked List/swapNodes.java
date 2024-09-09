@@ -67,7 +67,7 @@ public class swapNodes {
         System.out.print("Before swapping: ");
         printList(head);
 
-        int x = 4, y = 8;
+        int x = 4, y = 2;
         head = swapOperation(head, x, y);
         System.out.print("\nAfter swapping: ");
         printList(head);
