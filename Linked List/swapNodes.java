@@ -11,13 +11,43 @@ class Node{
 public class swapNodes {
 
     static Node swapOperation(Node head, int x, int y){
-        Node curr = head;
-        while(curr != null){
-            if(curr.data == x){
-                curr.data = y;
-            }
-            curr = curr.next;
+
+        if(x == y){
+            return head;
         }
+
+        Node currx = head, prevx = null;
+        while(currx != null && currx.data != x){
+            prevx = currx;
+            currx = currx.next;
+        }
+
+        Node curry = head, prevy = null;
+        while(curry != null && curry.data != y){
+            prevy = curry;
+            curry = curry.next;
+        }
+
+        if(currx == null || curry == null){
+            return head;
+        }
+
+        if(prevx != null){
+            prevx.next = curry;
+        }else{
+            head = curry;
+        }
+
+        if(prevy != null){
+            prevy.next = currx;
+        }else{
+            head = currx;
+        }
+
+        Node temp = currx.next;
+        currx.next = curry.next;
+        curry.next = temp;
+        
         return head;
     }
 
