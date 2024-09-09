@@ -10,6 +10,17 @@ class Node{
 
 public class swapNodes {
 
+    static Node swapOperation(Node head, int x, int y){
+        Node curr = head;
+        while(curr != null){
+            if(curr.data == x){
+                curr.data = y;
+            }
+            curr = curr.next;
+        }
+        return head;
+    }
+
     static void printList(Node head){
         while(head != null){
             System.out.print(head.data + " ");
@@ -25,8 +36,11 @@ public class swapNodes {
 
         System.out.print("Before swapping: ");
         printList(head);
-        int x = 4, y = 8;
 
+        int x = 4, y = 8;
+        head = swapOperation(head, x, y);
+        System.out.print("\nAfter swapping: ");
+        printList(head);
     }
     
 }
