@@ -10,6 +10,16 @@ class Node{
 
 public class reverseList {
 
+    static Node reverseOperationRecur(Node head){
+        if(head == null || head.next == null){
+            return head;
+        }
+
+        Node reverse = reverseOperationRecur(head.next);
+        head.next.next = head;
+        head.next = null;
+        return reverse;
+    }
     static Node reverseOperation(Node head){
         Node curr = head, prev = null, next;
 
@@ -39,6 +49,10 @@ public class reverseList {
 
         head = reverseOperation(head);
         System.out.print("\nAfter reversing using iterative method: ");
+        printList(head);
+
+        head = reverseOperationRecur(head);
+        System.out.print("\nAfter reversing using recursive method: ");
         printList(head);
     }
 }
