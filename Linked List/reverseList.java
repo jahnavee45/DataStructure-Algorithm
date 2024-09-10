@@ -52,7 +52,7 @@ public class reverseList {
         printList(head);
 
         head = reverseOperationRecur(head);
-        System.out.print("\nAfter reversing using recursive method: ");
+        System.out.print("\nReversing back using recursive method: ");
         printList(head);
     }
 }
