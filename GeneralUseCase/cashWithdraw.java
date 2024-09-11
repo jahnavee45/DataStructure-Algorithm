@@ -1,8 +1,8 @@
-package Loops;
+package GeneralUseCase;
 
 import java.util.Scanner;
 
-public class whileLoop {
+public class cashWithdraw {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
