@@ -15,5 +15,6 @@ public class whileLoop {
             answer = sc.next();
         }
         System.out.println("Vist again!");
+        sc.close();
     }
 }
