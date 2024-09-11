@@ -20,6 +20,7 @@ public class reverseList {
         head.next = null;
         return reverse;
     }
+    
     static Node reverseOperation(Node head){
         Node curr = head, prev = null, next;
 
