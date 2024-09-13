@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
 class Node{
     int data;
     Node next;
@@ -9,6 +12,33 @@ class Node{
 }
 
 public class mergeSortedList {
+
+    static Node mergeList(Node one, Node two){
+
+        ArrayList<Integer> list = new ArrayList<>();
+
+        while(one != null){
+            list.add(one.data);
+            one = one.next;
+        }
+
+        while(two != null){
+            list.add(two.data);
+            two = two.next;
+        }
+
+        Collections.sort(list);
+
+        Node merge = new Node(-1);
+        Node head = merge;
+        for(int val : list){
+            merge.next = new Node(val);
+            merge = merge.next;
+        }
+
+        head = head.next;
+        return head;
+    }
 
     static void printList(Node head){
         while(head != null){
@@ -34,5 +64,9 @@ public class mergeSortedList {
 
         System.out.print("\nSecond sorted list: ");
         printList(two);
+
+        Node res = mergeList(one, two);
+        System.out.print("\nAfter merge sort operation: ");
+        printList(res);
     }
 }
