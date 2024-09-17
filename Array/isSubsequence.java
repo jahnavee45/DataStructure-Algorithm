@@ -3,7 +3,7 @@ public class isSubsequence {
     static boolean checkIfPresent(String s, String c){
         int i = 0, j = 0;
 
-        while(i < c.length()){
+        while(i < c.length() && j < s.length()){
             if(c.charAt(i) == s.charAt(j)){
                 j++;
             }
