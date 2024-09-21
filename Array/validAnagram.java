@@ -28,7 +28,7 @@ public class validAnagram {
 
     public static void main(String[] args) {
         String s = "anagram";
-        String c = "nagaraa";
+        String c = "nagaram";
 
         boolean res = checkAnagram(s, c);
         if(res == true){
