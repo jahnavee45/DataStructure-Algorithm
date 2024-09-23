@@ -32,7 +32,7 @@ public class validAnagram {
 
         boolean res = checkAnagram(s, c);
         if(res == true){
-            System.out.println("Is a valid anagram");
+            System.out.println("A valid anagram");
         }else{
             System.out.println("Not a valid anagram");
         }
