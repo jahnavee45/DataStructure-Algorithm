@@ -34,7 +34,7 @@ public class validAnagram {
         if(res == true){
             System.out.println("Is a valid anagram");
         }else{
-            System.out.println("Is not a valid anagram");
+            System.out.println("Not a valid anagram");
         }
     }
 }
