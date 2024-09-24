@@ -10,23 +10,22 @@ class Node{
 
 public class insertGivenPosition {
 
-    static Node insertNode(Node head, int key, int data){
+    static Node insertNode(Node head, int pos, int data){
+        Node newNode = new Node(data);
+
+        if(pos == 0){
+            newNode.next = head;
+            return newNode;
+        }
+
         Node curr = head;
 
-        while(curr != null){
-            if(curr.data == key){
-                break;
-            }
+        for(int i = 0; i < pos-1; i++){
             curr = curr.next;
         }
 
-        if(curr == null){
-            return head;
-        }
-
-        Node new_node = new Node(data);
-        new_node.next = curr.next;
-        curr.next = new_node;
+        newNode.next = curr.next;
+        curr.next = newNode;
         return head;
     }
 
