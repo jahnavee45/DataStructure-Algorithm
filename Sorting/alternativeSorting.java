@@ -1,4 +1,3 @@
-
 public class alternativeSorting {
 
     static void sortingOperation(int[] arr, int n){
