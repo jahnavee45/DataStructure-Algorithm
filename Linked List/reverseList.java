@@ -21,6 +21,13 @@ public class reverseList {
         return reverse;
     }
     
+    static Node reverseOperation(Node head){
+        Node curr = head, prev = null;
+
+        while(curr != null){
+            
+        }
+    }
     
     static void printList(Node head){
         while(head != null){
