@@ -21,17 +21,7 @@ public class reverseList {
         return reverse;
     }
     
-    static Node reverseOperation(Node head){
-        Node curr = head, prev = null, next;
-
-        while(curr != null){
-            next = curr.next;
-            curr.next = prev;
-            prev = curr;
-            curr = next;
-        }
-        return prev;
-    }
+    
     static void printList(Node head){
         while(head != null){
             System.out.print(head.data + " ");
