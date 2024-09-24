@@ -12,6 +12,18 @@ public class insertGivenPosition {
 
     static Node insertNode(Node head, int pos, int data){
         Node newNode = new Node(data);
+        Node check = head;
+
+        int count = 0;
+        while(check != null){
+            check = check.next;
+            count++;
+        }
+
+        if(pos > count){
+            System.out.print("\nGiven position exceeds the length of list, so insertion not possible");
+            return head;
+        }
 
         if(pos == 0){
             newNode.next = head;
@@ -45,9 +57,9 @@ public class insertGivenPosition {
         System.out.print("Before node insertion: ");
         printNodes(head);
 
-        System.out.print("\nAfter node insertion: ");
-        int key = 3, data = 4;
+        int key = 6, data = 4;
         head = insertNode(head, key, data);
+        System.out.print("\nAfter node insertion: ");
         printNodes(head);
 
     }
