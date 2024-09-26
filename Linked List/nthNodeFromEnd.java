@@ -15,7 +15,7 @@ public class nthNodeFromEnd {
         Node curr = head;
         Node ptr = head;
 
-        for(int i = 0; i < n; i++){
+        for(int i = 1; i < n; i++){
             ptr = ptr.next;
         }
 
