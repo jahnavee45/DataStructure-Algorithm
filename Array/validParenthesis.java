@@ -23,8 +23,7 @@ public class validParenthesis {
         return st.empty();
     }
     public static void main(String[] args) {
-        String s = "({})";
-
+        String s = "({)";
         boolean res = checkValid(s);
         if(res == true){
             System.out.println("Valid parenthesis");
