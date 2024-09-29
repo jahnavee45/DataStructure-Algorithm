@@ -26,5 +26,10 @@ public class validParenthesis {
         String s = "(){}[]";
 
         boolean res = checkValid(s);
+        if(res == true){
+            System.out.println("Valid parenthesis");
+        }else{
+            System.out.println("Invalid parenthesis");
+        }
     }
 }
