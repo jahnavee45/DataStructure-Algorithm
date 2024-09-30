@@ -16,17 +16,30 @@ public class rotateList {
             return head;
         }
 
-        for(int i = 0; i < k; ++i){
-            Node curr = head;
-            while(curr.next != null){
-                curr = curr.next;
-            }
+        Node curr = head;
+        int len = 1;
 
-            curr.next = head;
+        while(curr.next != null){
             curr = curr.next;
-            head = head.next;
-            curr.next = null;
+            len++;
         }
+
+        k %= len;
+        if(k == 0){
+            return head;
+        }
+
+        // making linked list circular
+        curr.next = head;
+
+        curr = head;
+        for(int i = 0; i < k ; i++){
+            curr = curr.next;
+        }
+
+        head = curr.next;
+        curr.next = null;
+
         return head;
     }
 
