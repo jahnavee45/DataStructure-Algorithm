@@ -11,5 +11,14 @@ public class reverseString {
 
         System.out.println("Before reversing:" + str);
         System.out.println("After reversing: " + str1);
+        System.out.println("After reversing using recursion: " + doReverse(str));
+    }
+
+    private static String doReverse(String str) {
+        if(str.isEmpty()){
+            return str;
+        }
+
+        return doReverse(str.substring(1)) + str.charAt(0);
     }
 }
