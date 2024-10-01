@@ -22,6 +22,7 @@ public class reverseList {
         return reverse;
     }
     
+    // using Naive approach
     static Node reverseOperation(Node head){
         Node curr = head, prev = null;
 
