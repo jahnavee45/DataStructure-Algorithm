@@ -10,6 +10,7 @@ class Node{
 
 public class reverseList {
 
+    // using recursion method
     static Node reverseOperationRecur(Node head){
         if(head == null || head.next == null){
             return head;
