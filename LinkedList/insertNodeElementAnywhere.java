@@ -1,3 +1,5 @@
+package LinkedList;
+
 class Node{
     int data;
     Node next;
@@ -8,28 +10,37 @@ class Node{
     }
 }
 
-public class insertAtEndNode {
+public class insertNodeElementAnywhere {
 
-    static Node insertNewElement(Node head, int data){
+    static Node insertElement(Node head, int data, int pos){
         Node newNode = new Node(data);
 
-        if(head == null){
-            return newNode;
+        if(pos == 1){
+            newNode.next = head;
+            head = newNode;
+
+            return head;
         }
 
-        Node end = head;
-        while(end.next != null){
-            end = end.next;
-        }
-
-        end.next = newNode;
-        return head;
-    }
-
-    static void printList(Node head){
         Node curr = head;
 
-        while(curr!= null){
+        for(int i = 0; i < pos-1 && curr != null; i++){
+            curr = curr.next;
+        }
+
+        if(curr == null){
+            System.out.print("\nPosition is out of bound");
+            return head;
+        }
+
+        newNode.next = curr.next;
+        curr.next = newNode;
+
+        return head;
+    }
+    static void printList(Node head){
+        Node curr = head;
+        while(curr != null){
             System.out.print(curr.data + " ");
             curr = curr.next;
         }
@@ -44,8 +55,8 @@ public class insertAtEndNode {
         System.out.print("Before insertion: ");
         printList(head);
 
-        int data = 12;
-        head = insertNewElement(head, data);
+        int data = 6, pos = 1;
+        head = insertElement(head, data, pos);
         System.out.print("\nAfter insertion: ");
         printList(head);
         
