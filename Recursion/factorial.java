@@ -7,13 +7,14 @@ public class factorial {
         int n = sc.nextInt();
 
         System.out.println("The factorial of " + n + " is " + fact(n));
-            }
-        
-            private static int fact(int n) {
-                if(n == 0){
-                    return 1;
-                }
+        sc.close();
+    }
 
-                return n * fact(n-1);
-            }
+    private static int fact(int n) {
+        if (n == 0) {
+            return 1;
+        }
+
+        return n * fact(n - 1);
+    }
 }
