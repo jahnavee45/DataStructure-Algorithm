@@ -2,7 +2,7 @@ package String;
 
 public class pallindromeString {
     public static void main(String[] args) {
-        String s = "abbc";
+        String s = "abba";
 
         int res = checkPallindrome(s);
         if (res == 0) {
