@@ -1,6 +1,6 @@
 public class integerRoman {
     public static void main(String[] args) {
-        int n = 3456;
+        int n = 927;
 
         System.out.println("The roman value of integer " + n + " is " + findRoman(n));
             }
