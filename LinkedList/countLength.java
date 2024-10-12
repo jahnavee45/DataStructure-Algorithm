@@ -9,7 +9,7 @@ class Node {
         this.next = null;
     }
 }
-
+// counting length
 public class countLength {
     public static void main(String[] args) {
         Node head = new Node(2);
