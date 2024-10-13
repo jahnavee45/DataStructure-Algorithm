@@ -11,6 +11,7 @@ class Node{
     }
 }
 
+// deleting the last given node
 public class deleteLastNode {
 
     static Node deleteEndNode(Node head){
