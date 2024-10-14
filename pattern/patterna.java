@@ -12,5 +12,12 @@ public class patterna {
             }
             System.out.println();
         }
+
+        for(i = n-1; i >= 0; i--){
+            for(j = 1; j<=i ; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
 }
