@@ -6,13 +6,21 @@ public class hollowPyramid {
             for(int j = 0; j < 5-i-1; j++){
                 System.out.print(" ");
             }
-            for(int k = 0; k <= i; k++){
-                if(k == 0 || k == i){
-                    System.out.print("* ");
-                }else{
-                    System.out.print("  ");
+            if(i != 5-1){
+                for(int k = 0; k <= i; k++){
+                    if(k == 0 || k == i){
+                        System.out.print("* ");
+                    }else{
+                        System.out.print("  ");
+                    }
                 }
             }
+                else{
+                    for(int k = 0; k <= i; k++){
+                        System.out.print("* ");
+                    }
+                }
+            
             System.out.println();
         }
     }
