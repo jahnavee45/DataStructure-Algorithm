@@ -13,5 +13,6 @@ public class Student {
             System.out.println("number is odd.");
         }
 
+        myObj.close();
     }
 }
