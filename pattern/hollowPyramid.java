@@ -1,4 +1,3 @@
-package pattern;
 
 public class hollowPyramid {
     public static void main(String[] args) {

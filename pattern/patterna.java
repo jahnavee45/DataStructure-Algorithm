@@ -1,4 +1,3 @@
-package pattern;
 
 public class patterna {
     public static void main(String[] args) {
