@@ -6,7 +6,7 @@ public class practice {
     public static void main(String[] args) {
         ArrayList<String> arr = new ArrayList<>();
         arr.add("apple");
-        arr.add("banana");
+        arr.add("cherry");
         arr.add("mango");
 
         System.out.println("Printing arraylist using Iterator method: ");
