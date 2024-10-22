@@ -9,7 +9,7 @@ public class practice {
         arr.add("cherry");
         arr.add("mango");
 
-        System.out.println("Printing arraylist using Iterator method: ");
+        System.out.println("Printing arraylist using iterator method: ");
         Iterator<String> val = arr.iterator();
         while(val.hasNext()){
             String s = val.next();
