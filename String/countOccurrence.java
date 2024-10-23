@@ -1,9 +1,14 @@
 package String;
 
+import java.util.Scanner;
+
 public class countOccurrence {
     public static void main(String[] args) {
-        String str = "A cat sat on the mat";
-        char ch = 'a';
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a sentence:");
+        String str = sc.nextLine();
+        System.out.println("Enter the character to find its occurrence:");
+        char ch = sc.next().charAt(0);
         System.out.println("The total number of '" + ch + "' present in the given string is " + totalCount(str, ch));
     }
 
