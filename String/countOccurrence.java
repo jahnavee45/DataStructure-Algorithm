@@ -10,6 +10,7 @@ public class countOccurrence {
         System.out.println("Enter the character to find its occurrence:");
         char ch = sc.next().charAt(0);
         System.out.println("The total number of '" + ch + "' present in the given string is " + totalCount(str, ch));
+        sc.close();
     }
 
     private static int totalCount(String str, char ch) {
