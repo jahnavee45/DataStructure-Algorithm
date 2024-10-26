@@ -10,7 +10,7 @@ public class reverseEachWord {
     }
 
     private static String reverseOperation(String str) {
-        String s = "";
+        StringBuilder s = new StringBuilder();
         HashMap<Integer, Character> map = new HashMap<>();
 
         for(int i = 0; i < str.length(); i++){
@@ -18,14 +18,15 @@ public class reverseEachWord {
         }
 
         for(int i = str.length()-1; i >= 0; i--){
-            s = s + map.get(i);
+            s.append(map.get(i));
         }
 
-        String[] s1 = s.split(" ");
-        String res = "";
-        for(int i = s1.length - 1; i >= 0; i--){
-            res = res + s1[i] + " ";
+        String s1 = s.toString();
+        String[] s2 = s1.split(" ");
+        StringBuilder res = new StringBuilder();
+        for(int i = s2.length - 1; i >= 0; i--){
+            res.append(s2[i]).append(" ");
         }
-        return res;
+        return res.toString().trim();
     }
 }
