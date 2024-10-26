@@ -11,6 +11,7 @@ public class reverseEachWord {
 
     private static String reverseOperation(String str) {
         StringBuilder s = new StringBuilder();
+        StringBuilder res = new StringBuilder();
         HashMap<Integer, Character> map = new HashMap<>();
 
         for(int i = 0; i < str.length(); i++){
@@ -21,9 +22,9 @@ public class reverseEachWord {
             s.append(map.get(i));
         }
 
-        String s1 = s.toString();
-        String[] s2 = s1.split(" ");
-        StringBuilder res = new StringBuilder();
+        str = s.toString();
+        String[] s2 = str.split(" ");
+        
         for(int i = s2.length - 1; i >= 0; i--){
             res.append(s2[i]).append(" ");
         }
