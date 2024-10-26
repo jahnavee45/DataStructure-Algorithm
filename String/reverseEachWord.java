@@ -20,7 +20,12 @@ public class reverseEachWord {
         for(int i = str.length()-1; i >= 0; i--){
             s = s + map.get(i);
         }
-        
-        return s;
+
+        String[] s1 = s.split(" ");
+        String res = "";
+        for(int i = s1.length - 1; i >= 0; i--){
+            res = res + s1[i] + " ";
+        }
+        return res;
     }
 }
