@@ -28,6 +28,7 @@ public class reverseEachWord {
         for(int i = s2.length - 1; i >= 0; i--){
             res.append(s2[i]).append(" ");
         }
+        // trim trailing spaces
         return res.toString().trim();
     }
 }
