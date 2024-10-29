@@ -14,5 +14,6 @@ class funtionalInterface {
         Square s = (int x) -> x * x;
         int ans = s.calculate(a);
         System.out.println(ans);
+        Square.printHello();
     }
 }
