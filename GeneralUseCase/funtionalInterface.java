@@ -3,6 +3,9 @@ package GeneralUseCase;
 @FunctionalInterface
 interface Square {
     int calculate(int x);
+    static void printHello(){
+        System.out.println("Hello world!");
+    }
 }
 class funtionalInterface {
      public static void main(String args[])
