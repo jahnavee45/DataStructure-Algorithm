@@ -1,9 +1,7 @@
 package GeneralUseCase;
 
-class Square {
-    void area(int x){
-        System.out.println("Area of square: " + x*x);
-    }
+interface Welcome {
+    void print();
 }
 
 class Rectangle{
@@ -15,7 +13,7 @@ class methodRefrence {
      public static void main(String args[])
     {
         int a = 5;
-        Square s = Rectangle::area(23, 12);
-        s.area(12);
+        Welcome w = Rectangle::area(23, 12);
+        w.print();
     }
 }
