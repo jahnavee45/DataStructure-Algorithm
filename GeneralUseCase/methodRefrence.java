@@ -1,7 +1,9 @@
 package GeneralUseCase;
 
-interface Welcome {
-    void print();
+class Welcome {
+    void print(){
+        System.out.println("Welcome");
+    }
 }
 
 class HelloWorld{
@@ -13,7 +15,7 @@ class methodRefrence {
      public static void main(String args[])
     {
         int a = 5;
-        Welcome w = HelloWorld::printHello();
+        Welcome w = new Welcome() ;
         w.print();
     }
 }
