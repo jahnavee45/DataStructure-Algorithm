@@ -63,10 +63,10 @@ public class insertGivenPosition {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("\nEnter the position where data to be inserted in linked list:");
-        int key = sc.nextInt();
+        int pos = sc.nextInt();
         System.out.println("Enter the data to insert in linked list:");
         int data = sc.nextInt();
-        head = insertNode(head, key, data);
+        head = insertNode(head, pos, data);
         System.out.print("After node insertion: ");
         printNodes(head);
 
