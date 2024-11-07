@@ -1,5 +1,7 @@
 package LinkedList;
 
+import java.util.Scanner;
+
 class Node{
     int data; 
     Node next;
@@ -36,9 +38,12 @@ public class insertInBeginning {
         System.out.print("Before insertion: ");
         printList(head);
 
-        int data = 1;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number to insert in beginning of linked list:");
+        int data = sc.nextInt();
         head = insertNewElement(head, data);
         System.out.print("\nAfter insertion: ");
         printList(head);
+        sc.close();
     }
 }
