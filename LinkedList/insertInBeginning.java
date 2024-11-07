@@ -39,7 +39,7 @@ public class insertInBeginning {
         printList(head);
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number to insert in beginning of linked list:");
+        System.out.println("\nEnter the number to insert in beginning of linked list:");
         int data = sc.nextInt();
         head = insertNewElement(head, data);
         System.out.print("\nAfter insertion: ");
