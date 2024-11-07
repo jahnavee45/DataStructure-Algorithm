@@ -1,5 +1,7 @@
 package LinkedList;
 
+import java.util.Scanner;
+
 class Node{
     int data;
     Node next;
@@ -23,7 +25,7 @@ public class insertGivenPosition {
         }
 
         if(pos > count){
-            System.out.print("\nGiven position exceeds the length of list, so insertion not possible");
+            System.out.print("Given position exceeds the length of list, so insertion not possible");
             return head;
         }
 
@@ -59,11 +61,16 @@ public class insertGivenPosition {
         System.out.print("Before node insertion: ");
         printNodes(head);
 
-        int key = 6, data = 4;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("\nEnter the position where data to be inserted in linked list:");
+        int key = sc.nextInt();
+        System.out.println("Enter the data to insert in linked list:");
+        int data = sc.nextInt();
         head = insertNode(head, key, data);
-        System.out.print("\nAfter node insertion: ");
+        System.out.print("After node insertion: ");
         printNodes(head);
 
+        sc.close();
     }
 }
 
