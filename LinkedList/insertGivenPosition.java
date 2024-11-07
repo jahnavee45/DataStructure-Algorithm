@@ -14,7 +14,28 @@ class Node{
 
 public class insertGivenPosition {
 
-    static Node insertNode(Node head, int pos, int data){
+    public static void main(String[] args) {
+        Node head = new Node(2);
+        head.next = new Node(3);
+        head.next.next = new Node(5);
+        head.next.next.next = new Node(6);
+
+        System.out.print("Before node insertion: ");
+        printNodes(head);
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("\nEnter the position where data to be inserted in linked list:");
+        int pos = sc.nextInt();
+        System.out.println("Enter the data to insert in linked list:");
+        int data = sc.nextInt();
+        head = insertNode(head, pos, data);
+        System.out.print("After node insertion: ");
+        printNodes(head);
+
+        sc.close();
+    }
+
+    private static Node insertNode(Node head, int pos, int data){
         Node newNode = new Node(data);
         Node check = head;
 
@@ -45,32 +66,12 @@ public class insertGivenPosition {
         return head;
     }
 
-    static void printNodes(Node head){
+    private static void printNodes(Node head){
         Node curr = head;
         while(curr != null){
             System.out.print(curr.data + " ");
             curr = curr.next;
         }
-    }
-    public static void main(String[] args) {
-        Node head = new Node(2);
-        head.next = new Node(3);
-        head.next.next = new Node(5);
-        head.next.next.next = new Node(6);
-
-        System.out.print("Before node insertion: ");
-        printNodes(head);
-
-        Scanner sc = new Scanner(System.in);
-        System.out.println("\nEnter the position where data to be inserted in linked list:");
-        int pos = sc.nextInt();
-        System.out.println("Enter the data to insert in linked list:");
-        int data = sc.nextInt();
-        head = insertNode(head, pos, data);
-        System.out.print("After node insertion: ");
-        printNodes(head);
-
-        sc.close();
     }
 }
 
