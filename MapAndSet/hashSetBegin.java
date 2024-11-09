@@ -12,5 +12,8 @@ public class hashSetBegin {
 
         // print size of set
         System.out.println("The size of set is: " + set.size());
+
+        // print all elements of set
+        System.out.println("Elements of set: " + set);
     }
 }
