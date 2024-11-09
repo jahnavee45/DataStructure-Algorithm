@@ -1,5 +1,6 @@
 package MapAndSet;
 import java.util.HashSet;
+import java.util.Iterator;
 
 public class hashSetBegin {
     public static void main(String[] args) {
@@ -15,5 +16,12 @@ public class hashSetBegin {
 
         // print all elements of set
         System.out.println("Elements of set: " + set);
+
+        // to iterate each element of set
+        Iterator<Integer> it = set.iterator();
+
+        while(it.hasNext()){
+            System.out.println(it.next());
+        }
     }
 }
