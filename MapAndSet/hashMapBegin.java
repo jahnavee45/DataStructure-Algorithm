@@ -1,5 +1,6 @@
 package MapAndSet;
 import java.util.HashMap;
+import java.util.Map;
 
 public class hashMapBegin {
     public static void main(String[] args) {
@@ -16,5 +17,11 @@ public class hashMapBegin {
 
         // print elements of hashmap
         System.out.println("Elements of map: " + map);
+
+        // print each element one by one
+        for(Map.Entry<String, Integer> e : map.entrySet()){
+            System.out.print(e.getKey() + " ");
+            System.out.print(e.getValue() + "\n");
+        }
     }
 }
