@@ -20,8 +20,8 @@ public class hashMapBegin {
 
         // print each element one by one
         for(Map.Entry<String, Integer> e : map.entrySet()){
-            System.out.print(e.getKey() + " ");
-            System.out.print(e.getValue() + "\n");
+            System.out.print("Key: " + e.getKey() + ", ");
+            System.out.print("Value: " +e.getValue() + "\n");
         }
     }
 }
