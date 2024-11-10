@@ -23,5 +23,12 @@ public class hashMapBegin {
             System.out.print("Key: " + e.getKey() + ", ");
             System.out.print("Value: " +e.getValue() + "\n");
         }
+
+        // chech if key is present
+        if(map.containsKey("Apple")){
+            System.out.println("Key exists and its value is " + map.get("Apple"));
+        }else{
+            System.out.println("Key does not exists");
+        }
     }
 }
