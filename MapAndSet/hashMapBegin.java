@@ -11,6 +11,7 @@ public class hashMapBegin {
         map.put("Grapes", 6);
         map.put("Cherry", 8);
         map.put("Mango", 10);
+        map.put("Mango", 20);
 
         // print the size of hashmap
         System.out.println("Size of hashmap: " + map.size());
