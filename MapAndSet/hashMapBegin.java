@@ -11,6 +11,8 @@ public class hashMapBegin {
         map.put("Grapes", 6);
         map.put("Cherry", 8);
         map.put("Mango", 10);
+
+        // between two same keys, the one declared at last is taken
         map.put("Mango", 20);
 
         // print the size of hashmap
