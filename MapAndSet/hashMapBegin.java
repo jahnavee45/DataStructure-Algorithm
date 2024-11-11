@@ -10,7 +10,7 @@ public class hashMapBegin {
         map.put("Orange", 7);
         map.put("Grapes", 6);
         map.put("Cherry", 8);
-        map.put("Mango", 10);
+        map.put("Mango", 30);
 
         // between two same keys, the one declared at last is taken
         map.put("Mango", 20);
