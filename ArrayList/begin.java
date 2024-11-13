@@ -11,5 +11,9 @@ public class begin {
         list.add(9);
 
         System.out.println(list);
+
+        for(int arr:list){
+            System.out.print(arr + " ");
+        }
     }
 }
