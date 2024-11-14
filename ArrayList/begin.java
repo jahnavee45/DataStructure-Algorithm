@@ -9,6 +9,7 @@ public class begin {
         list.add(7);
         list.add(65);
         list.add(9);
+        list.add(40);
 
         // print all elements as a list
         System.out.println(list);
@@ -22,6 +23,6 @@ public class begin {
         list.set(2, 74);
         System.out.print("\n" + list);
 
-        
+        // list.remove()
     }
 }
