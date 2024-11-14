@@ -23,6 +23,8 @@ public class begin {
         list.set(2, 74);
         System.out.print("\n" + list);
 
-        // list.remove()
+        // remove an element using index
+        list.remove(2);
+        System.out.print("\n" + list);
     }
 }
