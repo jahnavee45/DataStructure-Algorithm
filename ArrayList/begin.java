@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class begin {
     public static void main(String[] args) {
@@ -7,6 +9,7 @@ public class begin {
         list.add(40);
         list.add(18);
         list.add(7);
+        list.add(40);
         list.add(65);
         list.add(9);
         list.add(40);
@@ -26,5 +29,9 @@ public class begin {
         // remove an element using index
         list.remove(2);
         System.out.print("\n" + list);
+
+        // remove duplicate elements
+        List<Integer> li = list.stream().distinct().collect(Collectors.toList());
+        System.out.println("\n" + li);
     }
 }
