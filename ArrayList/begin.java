@@ -10,10 +10,18 @@ public class begin {
         list.add(65);
         list.add(9);
 
+        // print all elements as a list
         System.out.println(list);
 
+        // print elements
         for(int arr:list){
             System.out.print(arr + " ");
         }
+
+        // update the value of element in list
+        list.set(2, 74);
+        System.out.print("\n" + list);
+
+        
     }
 }
