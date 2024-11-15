@@ -14,6 +14,13 @@ public class addElementsDynamically {
             a.add(sc.nextInt());
         }
 
+        // printing the list
         System.out.println("The elements of arraylist are: " + a);
+
+        System.out.println("Enter the index of element you want to delete: ");
+        int del = sc.nextInt();
+        a.remove(del);
+
+        System.out.println("Updated arraylist is: " + a);
     }
 }
