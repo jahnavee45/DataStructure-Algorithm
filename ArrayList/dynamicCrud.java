@@ -6,6 +6,7 @@ public class dynamicCrud {
         ArrayList<Integer> a = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
 
+        // creating the list
         System.out.println("Enter the number of elements you want in list: ");
         int n = sc.nextInt();
         System.out.printf("Now enter %d elements to add in list: ", n);
@@ -14,17 +15,17 @@ public class dynamicCrud {
             a.add(sc.nextInt());
         }
 
-        // printing the list
+        // retrieving the list
         System.out.println("The elements of arraylist are: " + a);
 
-        // updating element
+        // updating the list
         System.out.println("Enter the index of element you want to update and a new value: ");
         int up = sc.nextInt();
         int val = sc.nextInt();
         a.set(up, val);
         System.out.println("Updated arraylist is: " + a);
 
-        // removing element
+        // removing element from list
         System.out.println("Enter the index of element you want to delete: ");
         int del = sc.nextInt();
         a.remove(del);
