@@ -30,5 +30,7 @@ public class dynamicCrud {
         a.remove(del);
 
         System.out.println("Updated arraylist is: " + a);
+
+        sc.close();
     }
 }
