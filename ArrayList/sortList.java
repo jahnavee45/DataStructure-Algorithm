@@ -15,6 +15,6 @@ public class sortList {
         Collections.sort(list);
 
         System.out.print("List after sorting : " );
-        list.forEach((ele) -> System.out.print(ele + " "));
+        list.forEach((ele) -> System.out.print(ele + ", "));
     }
 }
