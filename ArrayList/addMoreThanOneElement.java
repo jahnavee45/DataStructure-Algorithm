@@ -10,11 +10,13 @@ public class addMoreThanOneElement {
         System.out.println("Printing list1: " + list1);
 
         ArrayList<Integer> list2 = new ArrayList<>();
-        list2.add(2);
-        list2.add(6);
-        list2.add(7);
-        list2.add(8);
+        list2.add(3);
+        list2.add(4);
+        list2.add(5);
         System.out.println("Printing list1: " + list2);
+
+        list1.addAll(1, list2);
+        System.out.println("Printing list1 after adding list2: " + list1);
 
     }
 }
