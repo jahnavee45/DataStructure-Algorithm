@@ -9,6 +9,10 @@ public class listToArray {
         list.add("Berry");
         list.add("Bananas");
 
+        System.out.println("Printing the arraylist: ");
+        list.forEach(ele -> System.out.println(ele));
+
+        System.out.println("Printing array elements after conversion: ");
         String[] arr = list.toArray(new String[list.size()]);
         for(String st : arr){
             System.out.println(st);
