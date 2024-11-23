@@ -17,18 +17,18 @@ public class minMax {
     }
 
     private static int findMax(ArrayList<Integer> list) {
-        if(list == null || list.size() == 0){
-            return Integer.MIN_VALUE;
-        }
-
-        return Collections.min(list);
-    }
-
-    private static int findMin(ArrayList<Integer> list) {
-        if(list == null || list.size() == 0){
+        if (list == null || list.size() == 0) {
             return Integer.MAX_VALUE;
         }
 
         return Collections.max(list);
+    }
+
+    private static int findMin(ArrayList<Integer> list) {
+        if (list == null || list.size() == 0) {
+            return Integer.MIN_VALUE;
+        }
+
+        return Collections.min(list);
     }
 }
