@@ -1,7 +1,9 @@
 package StreamApi;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 
 public class longestString {
     public static void main(String[] args) {
@@ -12,5 +14,8 @@ public class longestString {
         list.add("fig");
 
         System.out.println("List of fruits: " + list);
+
+        Optional<String> longest = list.stream().max(Comparator.comparingInt(String::length));
+        System.out.println("Longest name of fruit is: " + longest);
     }
 }
