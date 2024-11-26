@@ -2,6 +2,7 @@ package StreamApi;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class intersectionList {
     public static void main(String[] args) {
@@ -10,5 +11,8 @@ public class intersectionList {
 
         System.out.println("List 1 is: " + list1);
         System.out.println("List 2 is: " + list2);
+
+        List<Integer> list3 = list1.stream().filter(list2::contains).collect(Collectors.toList());
+        System.out.println("List 1 and List 2 after intersection: " + list3);
     }
 }
