@@ -15,5 +15,8 @@ public class evenOdd {
         List<Integer> even = check.get(true);
         List<Integer> odd = check.get(false);
 
+        System.out.println("Even numbers are: " + even);
+        System.out.println("Odd numbers are: " + odd);
+
     }
 }
