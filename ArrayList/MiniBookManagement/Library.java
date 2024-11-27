@@ -14,35 +14,51 @@ public class Library {
 
         System.out.println("Select any of the given options: ");
         System.out.println(
-                "1. Get the list of books \n2. Search any book \n3. Add new book and its category \n4. Remove any book");
+                "1. Get the list of books \n2. Search any book \n3. Add new book and its category \n4. Remove any book \n5.Exit");
         int option = sc.nextInt();
+        sc.nextLine();
 
-        switch (option) {
-            case 1: {
-                lib.getAllBooks(books);
-                break;
+        do {
+            switch (option) {
+                case 1: {
+                    lib.getAllBooks(books);
+                    System.out.println("Select any option from 1 to 5: ");
+                    option = sc.nextInt();
+                    sc.nextLine();
+                    break;
+                }
+                case 2: {
+                    System.out.println("Give the name of the book: ");
+                    String name = sc.nextLine();
+                    lib.searchBook(books, name);
+                    System.out.println("Select any option from 1 to 5: ");
+                    option = sc.nextInt();
+                    sc.nextLine();
+                    break;
+                }
+                case 3: {
+                    System.out.println("Give the name of the book: ");
+                    String name = sc.nextLine();
+                    System.out.println("Give the category: ");
+                    String category = sc.nextLine();
+                    books.add(new Book(name, category));
+                    System.out.println("New book added!");
+                    System.out.println("Select any option from 1 to 5: ");
+                    option = sc.nextInt();
+                    sc.nextLine();
+                    break;
+                }
+                case 4: {
+                    System.out.println("Give the name of book to remove: ");
+                    String name = sc.nextLine();
+                    lib.removeBook(books, name);
+                    System.out.println("Select any option from 1 to 5: ");
+                    option = sc.nextInt();
+                    sc.nextLine();
+                    break;
+                }
             }
-            case 2: {
-                System.out.println("Give the name of the book: ");
-                String name = sc.nextLine();
-                lib.searchBook(books, name);
-                break;
-            }
-            case 3: {
-                System.out.println("Give the name of the book: ");
-                String name = sc.nextLine();
-                System.out.println("Give the category: ");
-                String category = sc.nextLine();
-                lib.addNewBook(books, name, category);
-                break;
-            }
-            case 4: {
-                System.out.println("Give the name of book to remove: ");
-                String name = sc.nextLine();
-                lib.removeBook(books, name);
-                break;
-            }
-        }
+        }while (option != 5);
         sc.close();
     }
 
@@ -60,11 +76,6 @@ public class Library {
                 System.out.println(book.getBook() + " " + book.getCategory());
             }
         }
-    }
-
-    private void addNewBook(ArrayList<Book> books, String name, String category) {
-        books.add(new Book(name, category));
-        System.out.println("New book added!");
     }
 
     private void removeBook(ArrayList<Book> books, String name) {

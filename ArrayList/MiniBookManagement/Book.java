@@ -11,7 +11,11 @@ public class Book {
         return book;
     }
 
+    public void setBook(){}
+
     public String getCategory(){
         return category;
     }
+
+    public void setCategory(){}
 }
