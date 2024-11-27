@@ -20,11 +20,13 @@ public class Library {
         switch (option) {
             case 1: {
                 lib.getAllBooks(books);
+                break;
             }
             case 2: {
                 System.out.println("Give the name of the book: ");
                 String name = sc.nextLine();
                 lib.searchBook(books, name);
+                break;
             }
             case 3: {
                 System.out.println("Give the name of the book: ");
@@ -32,6 +34,7 @@ public class Library {
                 System.out.println("Give the category: ");
                 String category = sc.nextLine();
                 lib.addNewBook(books, name, category);
+                break;
             }
         }
         sc.close();
