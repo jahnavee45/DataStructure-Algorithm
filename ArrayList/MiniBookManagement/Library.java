@@ -36,21 +36,27 @@ public class Library {
                 lib.addNewBook(books, name, category);
                 break;
             }
+            case 4: {
+                System.out.println("Give the name of book to remove: ");
+                String name = sc.nextLine();
+                lib.removeBook(books, name);
+                break;
+            }
         }
         sc.close();
     }
 
     private void getAllBooks(ArrayList<Book> books) {
         System.out.println("This is the list of books along with category: ");
-        for(Book book : books){
+        for (Book book : books) {
             System.out.println(book.getBook() + " " + book.getCategory());
         }
 
     }
 
     private void searchBook(ArrayList<Book> books, String name) {
-        for(Book book : books){
-            if(book.getBook().equals(name)){
+        for (Book book : books) {
+            if (book.getBook().equals(name)) {
                 System.out.println(book.getBook() + " " + book.getCategory());
             }
         }
@@ -59,5 +65,9 @@ public class Library {
     private void addNewBook(ArrayList<Book> books, String name, String category) {
         books.add(new Book(name, category));
         System.out.println("New book added!");
+    }
+
+    private void removeBook(ArrayList<Book> books, String name) {
+        books.removeIf(book -> book.getBook().equals(name));
     }
 }
