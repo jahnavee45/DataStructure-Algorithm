@@ -34,6 +34,7 @@ public class Library {
                 lib.addNewBook(books, name, category);
             }
         }
+        sc.close();
     }
 
     private void getAllBooks(ArrayList<Book> books) {
