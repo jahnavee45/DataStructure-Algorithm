@@ -17,5 +17,7 @@ public class treeSet {
         TreeSet<Integer> set = new TreeSet<>();
         set.addAll(list);
         System.out.println("Printing a tree set: " + set);
+
+        
     }
 }
