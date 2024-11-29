@@ -1,6 +1,7 @@
 package MapAndSet;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.TreeSet;
 
@@ -18,6 +19,8 @@ public class treeSet {
         set.addAll(list);
         System.out.println("Printing a tree set: " + set);
 
-        
+        HashSet<Integer> hset = new HashSet<>();
+        hset.addAll(list);
+        System.out.println("Printing a hash set: " + hset);
     }
 }
