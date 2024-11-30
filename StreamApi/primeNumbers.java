@@ -9,7 +9,7 @@ public class primeNumbers {
     public static void main(String[] args) {
         List<Integer> list = Arrays.asList(21, 2, 47, 36, 59);
 
-        List<Integer> prime = list.stream().filter(PrimeFilter::isPrime).collect(Collectors.toList());
+        List<Integer> prime = list.stream().filter(n -> isPrime(n)).collect(Collectors.toList());
         System.out.println(prime);
     }
 
