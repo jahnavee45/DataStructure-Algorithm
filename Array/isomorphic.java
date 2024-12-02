@@ -1,7 +1,7 @@
 public class isomorphic {
     public static void main(String[] args) {
         String s = "egg";
-        String t = "abb";
+        String t = "abc";
 
         System.out.println(isIsomorphic(s, t)?"Is Isomorphic": "Not Isomorphic");
     }
@@ -18,7 +18,8 @@ public class isomorphic {
             if(m1[s.charAt(i)] != m2[t.charAt(i)]){
                 return false;
             }
-            m1[i] = 
+            m1[s.charAt(i)] = i+1;
+            m2[t.charAt(i)] = i+1;
         }
         
         return true;
