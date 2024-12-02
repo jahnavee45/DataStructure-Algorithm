@@ -1,7 +1,7 @@
 public class isomorphic {
     public static void main(String[] args) {
         String s = "egg";
-        String t = "abc";
+        String t = "abb";
 
         System.out.println(isIsomorphic(s, t)?"Is Isomorphic": "Not Isomorphic");
     }
