@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class wordPattern {
     public static void main(String[] args) {
         String p = "abba";
-        String w = "dog cat cat fish";
+        String w = "dog cat cat dog";
 
         System.out.println(isMatch(p, w)?"matches":"not match");
     }
