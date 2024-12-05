@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class isomorphic {
     public static void main(String[] args) {
         String s = "egg";
-        String t = "add";
+        String t = "ade";
 
         System.out.println(isIsomorphic(s, t)?"Yes is isomorphic":"No is not isomorphic");
     }
