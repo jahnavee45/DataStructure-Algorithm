@@ -4,8 +4,8 @@ import java.util.HashMap;
 
 public class isomorphic {
     public static void main(String[] args) {
-        String s = "ssc";
-        String t = "cce";
+        String s = "sec";
+        String t = "ces";
 
         System.out.println(isIsomorphic(s, t)? " Is Isomorphic":"Is not Isomorphic");
     }
