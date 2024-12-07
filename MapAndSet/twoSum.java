@@ -14,7 +14,7 @@ public class twoSum {
         int targetSum = 9;
         arr = findIndex(arr, targetSum);
 
-        System.out.print("Index of elements with sum " + targetSum + " is:" );
+        System.out.print("\nIndex of elements with sum " + targetSum + " is: " );
         for(int i = 0; i < arr.length; i++){
             System.out.print(arr[i] + " ");
         }
