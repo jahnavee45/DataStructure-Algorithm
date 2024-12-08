@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class validAnagram {
     public static void main(String[] args) {
         String s = "anagram";
-        String t = "nagaram";
+        String t = "sagaram";
 
         System.out.println(isAnagram(s, t)? "Yes":"No");
     }
@@ -26,10 +26,10 @@ public class validAnagram {
         }
 
         for(int i = 0; i < t.length(); i++){
-            if(!map.containsKey(s.charAt(i))){
+            if(!map.containsKey(t.charAt(i))){
                 return false;
             }else{
-                    map.put(s.charAt(i), map.get(s.charAt(i)) - 1);
+                map.put(t.charAt(i), map.get(t.charAt(i)) - 1);
             }           
         }
 
