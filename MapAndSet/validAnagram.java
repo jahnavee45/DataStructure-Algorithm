@@ -7,4 +7,11 @@ public class validAnagram {
 
         System.out.println(isAnagram(s, t)? "Yes":"No");
     }
+
+    public static boolean isAnagram(String s, String t){
+        if(s.length() != t.length()){
+            return false;
+        }
+        return true;
+    }
 }
