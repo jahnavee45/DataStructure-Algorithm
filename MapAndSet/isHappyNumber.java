@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 public class isHappyNumber {
     public static void main(String[] args) {
-        int n = 18;
+        int n = 2;
         System.out.println(isHappy(n) ? "Yes is happy number" : "No is not happy number");
     }
 
@@ -29,7 +29,7 @@ public class isHappyNumber {
 
         while (n != 0) {
             int r = n % 10;
-            ans = r * r;
+            ans += r * r;
             n /= 10;
         }
         return ans;
