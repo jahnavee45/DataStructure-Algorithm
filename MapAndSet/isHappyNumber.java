@@ -11,6 +11,16 @@ public class isHappyNumber {
     public static boolean isHappy(int n){
         HashSet<Integer> set = new HashSet<>();
 
+        while(n != 0){
+            if(!set.contains(n)){
+                set.add(n);
+                n = getNumber(n){
+                    if(n == 1){
+                        return true;
+                    }
+                }
+            }
+        }
         return false;
     }
 }
