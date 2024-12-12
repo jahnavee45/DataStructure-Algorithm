@@ -6,4 +6,9 @@ public class majorityElement {
         int res = findMajority(arr);
         System.out.println("The mejority element is " + res);
     }
+
+    public static int findMajority(int[] arr){
+        int res = 0;
+        return res;
+    }
 }
