@@ -11,10 +11,10 @@ public class hello {
     }
 
     public static String reverse(String s){
-        String str = null;
-
-        HashMap<Integer, Character> map = new HashMap<>();
-        
+        String str = "";
+        for(int i = s.length()-1; i >= 0; i--){
+            str += s.charAt(i);
+        }
         return str;
     }
 }
