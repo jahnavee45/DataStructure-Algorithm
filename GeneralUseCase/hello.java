@@ -7,7 +7,7 @@ public class hello {
         String s = "hello!";
         System.out.println("Say " + s);
         
-        System.out.println("After Reversing: " + reverse(s));
+        System.out.println("After Reversing:" + reverse(s));
     }
 
     public static String reverse(String s){
