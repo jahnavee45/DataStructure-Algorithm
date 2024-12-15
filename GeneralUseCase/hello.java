@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class hello {
     public static void main(String[] args) {
-        String s = "hello!";
+        String s = "hello jane!";
         System.out.println("Say " + s);
         
         System.out.println("After Reversing:" + reverse(s));
