@@ -8,6 +8,7 @@ public class hello {
         System.out.println("Say " + s);
         
         System.out.println("After Reversing:" + reverse(s));
+        System.out.println("After Reversing Each Word:" + reverse(s));
     }
 
     public static String reverse(String s){
@@ -16,5 +17,11 @@ public class hello {
             str += s.charAt(i);
         }
         return str;
+    }
+
+    public static String reverseEachWord(String s){
+        String res;
+
+        return res;
     }
 }
