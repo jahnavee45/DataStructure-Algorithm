@@ -1,6 +1,8 @@
 package GeneralUseCase;
 
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.stream.Collectors;
 
 public class hello {
     public static void main(String[] args) {
@@ -20,7 +22,9 @@ public class hello {
     }
 
     public static String reverseEachWord(String s){
-        String res;
+        String res = Arrays.asList(s.split(" "))
+                    .stream().map(str -> new StringBuilder(str).reverse())
+                    .collect(Collectors.joining(" "));
 
         return res;
     }
