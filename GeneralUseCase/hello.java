@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 public class hello {
     public static void main(String[] args) {
-        String s = "hello jane !";
+        String s = "hello jane";
         System.out.println("Say " + s);
         
         System.out.println("After Reversing:" + reverse(s));
