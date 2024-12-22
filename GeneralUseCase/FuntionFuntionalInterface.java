@@ -13,6 +13,7 @@ public class FuntionFuntionalInterface {
         System.out.println(res);
 
         val.stream().map(x -> x*x).forEach(System.out::println);
+        val.stream().map(x -> x * 0.5).forEach(System.out::println);
 
         // traditional method using function functional interface
         Function<Integer, Integer> v = x -> x*x;
