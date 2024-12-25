@@ -9,7 +9,7 @@ public class hello {
         System.out.println("Say " + s);
         
         System.out.println("After reversing:" + reverse(s));
-        System.out.println("After Reversing Each Word:" + reverseEachWord(s));
+        System.out.println("After reversing each word:" + reverseEachWord(s));
     }
 
     public static String reverse(String s){
