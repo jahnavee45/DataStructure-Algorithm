@@ -8,7 +8,7 @@ public class hello {
         String s = "java world";
         System.out.println("Say " + s);
         
-        System.out.println("After Reversing:" + reverse(s));
+        System.out.println("After reversing:" + reverse(s));
         System.out.println("After Reversing Each Word:" + reverseEachWord(s));
     }
 
