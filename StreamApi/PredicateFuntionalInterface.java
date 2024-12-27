@@ -1,9 +1,11 @@
-package GeneralUseCase;
+package StreamApi;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
+
+import GeneralUseCase.Employee;
 
 public class PredicateFuntionalInterface {
 
