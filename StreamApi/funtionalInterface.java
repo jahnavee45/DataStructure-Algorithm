@@ -1,4 +1,4 @@
-package GeneralUseCase;
+package StreamApi;
 
 @FunctionalInterface
 interface Square {
