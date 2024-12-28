@@ -12,5 +12,8 @@ public class localDateAndTime {
 
         ZonedDateTime dt = ZonedDateTime.now();
         System.out.println("Zoned date and Time: " + dt);
+
+        LocalDate x = LocalDate.of(2024, 12, 31);
+        System.out.println(x);
     }
 }
