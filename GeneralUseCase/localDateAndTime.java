@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.time.ZonedDateTime;
 
 public class localDateAndTime {
     public static void main(String[] args) {
@@ -8,5 +9,8 @@ public class localDateAndTime {
 
         LocalTime time = LocalTime.now();
         System.out.println("Local Time: " + time);
+
+        ZonedDateTime dt = ZonedDateTime.now();
+        System.out.println("Zoned date and Time: " + dt);
     }
 }
