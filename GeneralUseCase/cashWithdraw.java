@@ -1,5 +1,3 @@
-package GeneralUseCase;
-
 import java.util.Scanner;
 
 public class cashWithdraw {
