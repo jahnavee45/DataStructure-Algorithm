@@ -11,7 +11,7 @@ public class localDateAndTime {
 
         // to find local time
         LocalTime time = LocalTime.now();
-        System.out.println("Local Time: " + time);
+        System.out.println("Local Time now: " + time);
 
         // to find date and time according to zone/area
         ZonedDateTime dt = ZonedDateTime.now();
