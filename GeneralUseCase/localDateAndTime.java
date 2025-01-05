@@ -15,7 +15,7 @@ public class localDateAndTime {
 
         // to find date and time according to zone/area
         ZonedDateTime dt = ZonedDateTime.now();
-        System.out.println("Zoned date and Time: " + dt);
+        System.out.println("Date and Time of a given zone: " + dt);
 
         // to print a given date
         LocalDate x = LocalDate.of(2024, 12, 31);
