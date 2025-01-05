@@ -7,7 +7,7 @@ public class localDateAndTime {
 
         // to find local date
         LocalDate date = LocalDate.now();
-        System.out.println("Local Date: " + date);
+        System.out.println("Local Date now: " + date);
 
         // to find local time
         LocalTime time = LocalTime.now();
