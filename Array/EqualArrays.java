@@ -2,8 +2,8 @@ import java.util.HashMap;
 
 public class EqualArrays {
     public static void main(String[] args) {
-        int[] a1 = {1, 2, 3};
-        int[] a2 = {3, 1, 2};
+        int[] a1 = {1, 2, 3, 3};
+        int[] a2 = {3, 1, 2, 1};
         boolean res = checkEquality(a1, a2);
         System.out.println(res?"Equal Arrays":"Not Equal Arrays");
     }
