@@ -2,8 +2,10 @@ public class LeftRotate {
     public static void main(String[] args) {
         int[] arr = {10, 20, 30};
         int r = 2;
+        System.out.println("Before rotating: ");
         printArray(arr);
         rotateArray(arr, r);
+        System.out.println("After rotating: ");
         printArray(arr);
     }
 
