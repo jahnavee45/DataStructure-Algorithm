@@ -1,6 +1,6 @@
 public class LeftRotate {
     public static void main(String[] args) {
-        int[] arr = {10, 20, 30};
+        int[] arr = {10, 20, 30, 40};
         int r = 3;
         System.out.println("Before rotating: ");
         printArray(arr);
