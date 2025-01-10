@@ -7,14 +7,13 @@ public class MissingNumber {
     }
 
     public static int findMissingNumber(int[] a, int n, int k){
-        int res = 0;
         while(n != 0){
             if(a[n-1] != k){
-                res = k;
+                break;
             }
             n--;
             k--;
         }
-        return res;
+        return k;
     }
 }
