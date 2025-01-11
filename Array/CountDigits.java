@@ -10,6 +10,7 @@ public class CountDigits {
             return count;
         }
         n /= 10;
-        return findCount(n, count++);
+        count++;
+        return findCount(n, count);
     }
 }
