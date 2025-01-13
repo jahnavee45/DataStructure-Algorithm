@@ -6,9 +6,6 @@ public class Matrix {
         System.out.println("Matrix: ");
         printMatrix(arr, n, m);
 
-        System.out.println("Matrix multiplication: ");
-        matrixMultiplication(arr, n, m);
-
     }
 
     public static void printMatrix(int[][] arr, int n, int m){
