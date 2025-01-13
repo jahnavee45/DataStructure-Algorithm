@@ -4,6 +4,14 @@ public class Matrix {
         int n = 2, m = 3;
 
         System.out.println("Matrix: ");
+        printMatrix(arr, n, m);
+
+        System.out.println("Matrix multiplication: ");
+        matrixMultiplication(arr, n, m);
+
+    }
+
+    public static void printMatrix(int[][] arr, int n, int m){
         for(int i = 0; i < n; i++){
             for(int j = 0; j < m; j++){
                 System.out.print(arr[i][j] + " ");
