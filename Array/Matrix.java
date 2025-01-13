@@ -19,4 +19,8 @@ public class Matrix {
             System.out.println();
         }
     }
+
+    public static void matrixMultiplication(int[][] arr, int n, int m){
+        
+    }
 }
