@@ -3,7 +3,7 @@ public class Matrix {
         int[][] arr = {{1, 2, 3}, {2, 3, 4}};
         int n = 2, m = 3;
 
-        System.out.println("Matrix: ");
+        System.out.println("Print Matrix: ");
         printMatrix(arr, n, m);
 
     }
