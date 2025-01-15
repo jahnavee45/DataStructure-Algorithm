@@ -4,7 +4,6 @@ public class Matrix {
         int n = 2, m = 3;
         System.out.println("Print Matrix: ");
         printMatrix(arr, n, m);
-
     }
 
     public static void printMatrix(int[][] arr, int n, int m){
