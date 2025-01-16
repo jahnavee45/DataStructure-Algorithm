@@ -2,7 +2,7 @@ public class Matrix {
     public static void main(String[] args) {
         int[][] arr = {{1, 2, 3}, {2, 3, 4}};
         int n = 2, m = 3;
-        System.out.println("Print Matrix: ");
+        System.out.println("Print the Matrix: ");
         printMatrix(arr, n, m);
     }
 
