@@ -6,6 +6,7 @@ public class MultiplicationMatrix {
     }
 
     public static void findMultiplication(int[][] a1, int[][] a2){
+        int[][] a3 = new int[2][3];
         
     }
 }
