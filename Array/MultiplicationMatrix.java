@@ -4,4 +4,8 @@ public class MultiplicationMatrix {
         int[][] a2 = {{1, 2, 3}, {2, 3, 4}};
         findMultiplication(a1, a2);
     }
+
+    public static void findMultiplication(int[][] a1, int[][] a2){
+        
+    }
 }
