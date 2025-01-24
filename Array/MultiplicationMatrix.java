@@ -6,12 +6,16 @@ public class MultiplicationMatrix {
     }
 
     public static void findMultiplication(int[][] a1, int[][] a2){
-        int prod = 0, k = 0;
+        int prod = 0;
         for(int i = 0; i < 2; i++){
-            for(int j = 0; j < 3; j++){
-                prod = prod + (a1[i][j] * a2[i][j]);
+            for(int j = 0; j < 2; j++){
+                prod = 0;
+                for(int k = 0; k < 2; k++){
+                    prod = prod + (a1[i][k] * a2[k][j]);
+                }
+                System.out.print(prod + " ");
             }
-            System.out.println(prod);
+            System.out.println();
         }
 
     }
