@@ -6,5 +6,11 @@ public class words {
         for(char c : st.toCharArray()){
             System.out.print(c);
         }
+        System.out.println();
+
+        StringBuilder s = new StringBuilder();
+        s.append(st);
+        s.reverse();
+        System.out.println(s);
     }
 }
