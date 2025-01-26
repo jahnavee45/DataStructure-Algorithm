@@ -20,5 +20,6 @@ public class words {
             System.out.print(sb.reverse() + " ");
             sb.setLength(0);       
         }
+        
     }
 }
