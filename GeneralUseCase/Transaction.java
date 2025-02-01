@@ -5,7 +5,7 @@ public class Transaction {
         BankAccount bank = new BankAccount(1234567, 25000.78);
         Scanner sc = new Scanner(System.in);
         System.out.println(
-                "Select an option: \n1. Get account number \n2. Chack Balance \n3. Deposit Money \n4. Withdraw money");
+                "Select an option: \n1. Get account number \n2. Chack Balance \n3. Deposit Money \n4. Withdraw money \n5. Exit");
         int option = sc.nextInt();
         sc.nextLine();
         switch (option) {
@@ -27,12 +27,15 @@ public class Transaction {
                 sc.nextLine();
                 withdrawMoney(withdraw, bank);
             }
-
-            default:
-                break;
         }
-
-        
-
+                
     }
+
+    public static void withdrawMoney(double withdraw, BankAccount bank) {
+        if(bank.getBalance() > 0 && withdraw < bank.getBalance()){
+            
+        }
+    }
+
+    public static void depositMoney(double deposit, BankAccount bank){}
 }
