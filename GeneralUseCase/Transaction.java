@@ -33,9 +33,17 @@ public class Transaction {
 
     public static void withdrawMoney(double withdraw, BankAccount bank) {
         if(bank.getBalance() > 0 && withdraw < bank.getBalance()){
-            
+            double newBalance = bank.getBalance() - withdraw;
+            bank.setBalance(newBalance);
+            System.out.println("Amount withdrawn: ₹" + withdraw);
+        }else if(withdraw > bank.getBalance()){
+            System.out.println("Insufficient balance");
         }
     }
 
-    public static void depositMoney(double deposit, BankAccount bank){}
+    public static void depositMoney(double deposit, BankAccount bank){
+        double newBalance = bank.getBalance() + deposit;
+        bank.setBalance(newBalance);
+        System.out.println("New balance: ₹" + bank.getBalance());
+    }
 }
