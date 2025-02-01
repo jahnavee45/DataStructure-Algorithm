@@ -51,6 +51,7 @@ public class Transaction {
             }
         } while (option != 5);
 
+        sc.close();
     }
 
     public static void withdrawMoney(double withdraw, BankAccount bank) {
