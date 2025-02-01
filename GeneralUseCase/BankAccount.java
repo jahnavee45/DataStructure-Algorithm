@@ -6,4 +6,12 @@ public class BankAccount {
         this.accountNumber = accountNumber;
         this.balance = balance;
     }
+
+    public int getAccountNumber(){
+        return accountNumber;
+    }
+
+    public double getBalance(){
+        return balance;
+    }
 }
