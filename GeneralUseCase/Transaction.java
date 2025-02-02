@@ -67,6 +67,6 @@ public class Transaction {
     public static void depositMoney(double deposit, BankAccount bank) {
         double newBalance = bank.getBalance() + deposit;
         bank.setBalance(newBalance);
-        System.out.println("New balance: ₹" + bank.getBalance());
+        System.out.println("New balance: " + bank.getBalance());
     }
 }
