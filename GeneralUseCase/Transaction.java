@@ -12,7 +12,7 @@ public class Transaction {
             sc.nextLine();
             switch (option) {
                 case 1: {
-                    System.out.println("Account number is: " + bank.getAccountNumber());
+                    System.out.println("Account number: " + bank.getAccountNumber());
                     break;
                 }
                 case 2: {
