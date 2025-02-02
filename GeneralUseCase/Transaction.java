@@ -16,7 +16,7 @@ public class Transaction {
                     break;
                 }
                 case 2: {
-                    System.out.println("Current balance is: ₹" + bank.getBalance());
+                    System.out.println("Current balance: " + bank.getBalance());
                     break;
                 }
                 case 3: {
