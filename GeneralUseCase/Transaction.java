@@ -58,7 +58,7 @@ public class Transaction {
         if (bank.getBalance() > 0 && withdraw < bank.getBalance()) {
             double newBalance = bank.getBalance() - withdraw;
             bank.setBalance(newBalance);
-            System.out.println("Amount withdrawn: ₹" + withdraw);
+            System.out.println("Amount withdrawn: " + withdraw);
         } else if (withdraw > bank.getBalance()) {
             System.out.println("Insufficient balance");
         }
