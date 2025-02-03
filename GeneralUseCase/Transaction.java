@@ -7,7 +7,7 @@ public class Transaction {
         int option;
         do {
             System.out.println(
-                    "Select an option: \t\n1. Get account number \n2. Chack Balance \n3. Deposit Money \n4. Withdraw money \n5. Exit");
+                    "Select an option: \t\n1. Get account number \t\n2. Chack Balance \n3. Deposit Money \n4. Withdraw money \n5. Exit");
             option = sc.nextInt();
             sc.nextLine();
             switch (option) {
