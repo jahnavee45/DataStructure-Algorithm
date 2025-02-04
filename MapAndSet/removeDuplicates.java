@@ -10,6 +10,7 @@ public class removeDuplicates {
             System.out.print(a[i] + " ");
         }
 
+        System.out.println();
         int n = removeDuplicateOp(a, a.length);
         System.out.println("After removing duplicate: ");
         for(int i = 0; i < n; i++){
