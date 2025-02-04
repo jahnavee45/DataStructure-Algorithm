@@ -7,7 +7,6 @@ public class removeDuplicates {
         int[] a = {1, 2, 2, 3, 4, 3, 5};
         System.out.println("Before removing duplicate: ");
         int n = removeDuplicateOp(a, a.length);
-
         System.out.println("After removing duplicate: ");
         for(int i = 0; i < n; i++){
             System.out.print(a[i] + " ");
