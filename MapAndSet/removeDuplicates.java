@@ -27,7 +27,6 @@ public class removeDuplicates {
         for(int i : hashSet){
             a[j++] = i;
         }
-
         return j;
     }
 }
