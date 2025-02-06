@@ -14,5 +14,8 @@ public class sampleProgram {
 
         list.add(1, 40);
         System.out.println(list);
+
+        list.remove(1);
+        System.out.println(list);
     }
 }
