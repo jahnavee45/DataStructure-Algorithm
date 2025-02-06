@@ -11,5 +11,8 @@ public class sampleProgram {
         list.add(97);
 
         System.out.println(list);
+
+        list.add(1, 40);
+        System.out.println(list);
     }
 }
