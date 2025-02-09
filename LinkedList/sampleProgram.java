@@ -10,7 +10,7 @@ public class sampleProgram {
         list.add(38);
         list.add(97);
 
-        System.out.println(list);
+        System.out.println("New List:" + list);
 
         list.add(1, 40);
         System.out.println(list);
