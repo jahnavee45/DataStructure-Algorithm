@@ -13,7 +13,7 @@ public class sampleProgram {
         System.out.println("New List:" + list);
 
         list.add(1, 40);
-        System.out.println(list);
+        System.out.println("Adding new element:" + list);
 
         list.remove(1);
         System.out.println(list);
