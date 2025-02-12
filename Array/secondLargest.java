@@ -3,6 +3,9 @@ public class secondLargest {
         int[] arr = {27, 10, 34, 66, 3};
 
         System.out.println("Array before sorting: ");
+        for(int i:arr){
+            System.out.print(i + " ");
+        }
 
         for(int i = 0; i < arr.length; i++) {
             for(int j = 0; j < arr.length-1; j++){
@@ -14,7 +17,7 @@ public class secondLargest {
             }
         }
 
-        System.out.println("Arrays after sorting: ");
+        System.out.println("Array after sorting: ");
         for(int i:arr){
             System.out.print(i + " ");
         }
