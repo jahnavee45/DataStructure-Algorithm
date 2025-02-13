@@ -17,7 +17,7 @@ public class secondLargest {
             }
         }
 
-        System.out.println("\nArray after sorting: ");
+        System.out.println("\nAfter sorting: ");
         for(int i:arr){
             System.out.print(i + " ");
         }
