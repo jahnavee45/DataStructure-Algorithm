@@ -2,7 +2,7 @@ public class secondLargest {
     public static void main(String[] args) {
         int[] arr = {27, 10, 34, 66, 3};
 
-        System.out.println("Array before sorting: ");
+        System.out.println("Before sorting: ");
         for(int i:arr){
             System.out.print(i + " ");
         }
