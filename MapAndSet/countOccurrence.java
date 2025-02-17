@@ -19,5 +19,12 @@ public class countOccurrence {
 
         System.out.println("Printing count of all characters: ");
         System.out.println(map);
+
+        System.out.println("Printing all repeated characters: ");
+        for(char c : map.keySet()){
+            if(map.get(c) > 1){
+                System.out.print(c + " ");
+            }
+        }
     }
 }
