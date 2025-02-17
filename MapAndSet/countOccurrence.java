@@ -14,5 +14,7 @@ public class countOccurrence {
                 map.put(c, 1);
             }
         }
+
+        System.out.println(map);
     }
 }
