@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class countOccurrence {
     public static void main(String[] args) {
-        String str = "batty bought the butter";
+        String str = "hello world";
 
         HashMap<Character, Integer> map = new HashMap<>();
         for(char c : str.toCharArray()){
@@ -15,6 +15,7 @@ public class countOccurrence {
             }
         }
 
+        System.out.println("Printing count of all characters: ");
         System.out.println(map);
     }
 }
