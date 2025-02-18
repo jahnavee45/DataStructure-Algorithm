@@ -1,4 +1,8 @@
 import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class EmployeeController {
     public static void main(String[] args) {
@@ -13,5 +17,11 @@ public class EmployeeController {
             System.out.print(e.getId() + " " + e.getName() + " " + e.getEmail());
             System.out.println();
         }
+
+        List<Employee> sortedList = list.stream()
+        .sorted(Comparator.comparing(Employee::getName))
+        .collect(Collectors.toList());
+
+        
     }
 }
