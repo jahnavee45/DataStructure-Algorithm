@@ -8,8 +8,10 @@ public class EmployeeController {
         list.add(new Employee(3, "stallin","stallin@gmail.com"));
         list.add(new Employee(4, "jack","jack@gmail.com"));
 
+        System.out.println("Employee details without sorting: ");
         for(Employee e : list){
             System.out.print(e.getId() + " " + e.getName() + " " + e.getEmail());
+            System.out.println();
         }
     }
 }
