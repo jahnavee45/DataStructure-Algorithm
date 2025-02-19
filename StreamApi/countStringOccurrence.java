@@ -12,6 +12,6 @@ public class countStringOccurrence {
         Map<String, Long> countList = list.stream()
         .collect(Collectors.groupingBy(name -> name, Collectors.counting()));
 
-        countList.forEach((name, count) -> System.out.println(name + " " + count));
+        countList.forEach((name, count) -> System.out.println(name + ": " + count));
     }
 }
