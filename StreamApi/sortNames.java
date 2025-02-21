@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 public class sortNames {
     public static void main(String[] args) {
-        List<String> list = Arrays.asList("Plant", "Charlie", "Dennis", "Bob");
+        List<String> list = Arrays.asList("Plant", "Leaves", "Dennis", "Bob");
         System.out.println(list);
 
         List<String> sortedList = list.stream().sorted().collect(Collectors.toList());
