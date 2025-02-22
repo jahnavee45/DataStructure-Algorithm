@@ -9,7 +9,7 @@ public class crudOperations {
 
         List<Integer> newList = new ArrayList<>();
         for(int i = 0; i < list.size(); i++){
-            if(list.get(i) != 4){
+            if(list.get(i) != 3){
                 newList.add(list.get(i));
             }
         }
