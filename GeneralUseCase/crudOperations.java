@@ -9,6 +9,7 @@ public class crudOperations {
         // retrieving elements
         System.out.println("Printing list: " + list);
 
+        // inserting new element at a given position
         List<Integer> insertEle = new ArrayList<>();
         for(int i = 0; i < 3; i++){
                 insertEle.add(list.get(i));
@@ -19,6 +20,7 @@ public class crudOperations {
         }
         System.out.println("New list: " + insertEle);
 
+        // deleting element from a given position
         List<Integer> newList = new ArrayList<>();
         for(int i = 0; i < list.size(); i++){
             if(list.get(i) != 3){
