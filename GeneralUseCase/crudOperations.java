@@ -5,6 +5,8 @@ import java.util.List;
 public class crudOperations {
     public static void main(String[] args) {
         List<Integer> list = Arrays.asList(2, 3, 4, 5, 6);
+
+        // retrieving elements
         System.out.println("Printing list: " + list);
 
         List<Integer> insertEle = new ArrayList<>();
