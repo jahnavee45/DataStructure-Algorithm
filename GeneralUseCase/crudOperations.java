@@ -22,9 +22,9 @@ public class crudOperations {
 
         // deleting element from a given position
         List<Integer> newList = new ArrayList<>();
-        for(int i = 0; i < list.size(); i++){
+        for(int i = 0; i < insertEle.size(); i++){
             if(list.get(i) != 3){
-                newList.add(list.get(i));
+                newList.add(insertEle.get(i));
             }
         }
         System.out.println("After deletion: " + newList);
