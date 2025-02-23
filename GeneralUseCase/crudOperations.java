@@ -15,7 +15,7 @@ public class crudOperations {
         for(int i = 3; i < list.size(); i++){
             insertEle.add(list.get(i));
         }
-        System.out.println("");
+        System.out.println("New list: " + insertEle);
 
         List<Integer> newList = new ArrayList<>();
         for(int i = 0; i < list.size(); i++){
