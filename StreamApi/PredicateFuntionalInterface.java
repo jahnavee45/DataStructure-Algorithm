@@ -15,9 +15,7 @@ public class PredicateFuntionalInterface {
         List<Employee> newData = data.stream()
                 .filter(d -> d.getSalary() > 8000).collect(Collectors.toList());
         for(Employee employee : newData) {
-            System.out.println(employee.getId());
-            System.out.println(employee.getName());
-            System.out.println(employee.getSalary());
+            System.out.print(employee.getId() + " " + employee.getName() + " " + employee.getSalary());
         }
 
         // traditional way of using predicate functional interface
