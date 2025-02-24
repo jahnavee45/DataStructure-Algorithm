@@ -26,6 +26,7 @@ public class PredicateFuntionalInterface {
                 .filter(predicate).collect(Collectors.toList());
         for (Employee employee : newDataTraditional) {
             System.out.print(employee.getId() + " " + employee.getName() + " " + employee.getSalary());
+            System.out.println();
         }
 
         // second largest salary
