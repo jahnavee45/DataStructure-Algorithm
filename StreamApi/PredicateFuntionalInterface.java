@@ -32,5 +32,12 @@ public class PredicateFuntionalInterface {
         List<Employee> sortSalary = data.stream()
                 .sorted((e1, e2) -> Integer.compare(e1.getSalary(), e2.getSalary()))
                 .collect(Collectors.toList());
+
+        if (sortSalary.size() > 1) {
+            Employee res = sortSalary.get(1);
+            System.out.print(res.getId() + " " + res.getName() + " " + res.getSalary());
+        } else {
+            System.out.println("No second largest salary present!");
+        }
     }
 }
