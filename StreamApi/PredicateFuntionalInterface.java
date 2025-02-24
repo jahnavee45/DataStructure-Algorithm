@@ -23,9 +23,7 @@ public class PredicateFuntionalInterface {
         List<Employee> newDataTraditional = data.stream()
                 .filter(predicate).collect(Collectors.toList());
         for(Employee employee : newDataTraditional) {
-            System.out.println(employee.getId());
-            System.out.println(employee.getName());
-            System.out.println(employee.getSalary());
+            System.out.print(employee.getId() + " " + employee.getName() + " " + employee.getSalary());
         }
     }
 }
