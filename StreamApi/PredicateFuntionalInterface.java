@@ -16,6 +16,7 @@ public class PredicateFuntionalInterface {
                 .filter(d -> d.getSalary() > 8000).collect(Collectors.toList());
         for(Employee employee : newData) {
             System.out.print(employee.getId() + " " + employee.getName() + " " + employee.getSalary());
+            System.out.println();
         }
 
         System.out.println();
