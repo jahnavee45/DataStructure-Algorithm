@@ -30,8 +30,10 @@ public class PredicateFuntionalInterface {
         }
 
         // second largest salary
+
+        // sorting list in descending order
         List<Employee> sortSalary = data.stream()
-                .sorted((e1, e2) -> Integer.compare(e1.getSalary(), e2.getSalary()))
+                .sorted((e1, e2) -> Integer.compare(e2.getSalary(), e1.getSalary()))
                 .collect(Collectors.toList());
 
         if (sortSalary.size() > 1) {
