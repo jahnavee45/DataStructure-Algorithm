@@ -19,7 +19,6 @@ public class PredicateFuntionalInterface {
             System.out.println();
         }
 
-        System.out.println();
         // traditional way of using predicate functional interface
         Predicate<Employee> predicate = (e) -> e.getName().startsWith("J");
         List<Employee> newDataTraditional = data.stream()
