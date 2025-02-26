@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 
 public class evenOdd {
     public static void main(String[] args) {
-        List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6);
+        List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 7);
         System.out.println("Given list is: " + list);
 
         Map<Boolean, List<Integer>> check = list.stream().collect(Collectors.partitioningBy(n -> n % 2 == 0));
