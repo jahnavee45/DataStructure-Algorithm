@@ -16,6 +16,7 @@ public class EmployeeController {
             System.out.print(e.getId() + " " + e.getName() + " " + e.getEmail());
             System.out.println();
         }
+        System.out.println();
 
         List<Employee> sortedList = list.stream()
                 .sorted(Comparator.comparing(Employee::getName))
@@ -27,6 +28,7 @@ public class EmployeeController {
             System.out.println();
         }
 
+        System.out.println();
         List<Employee> findName = list.stream()
                 .filter(e -> e.getName().startsWith("s"))
                 .collect(Collectors.toList());
