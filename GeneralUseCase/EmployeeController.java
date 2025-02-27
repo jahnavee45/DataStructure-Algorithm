@@ -31,7 +31,7 @@ public class EmployeeController {
                 .filter(e -> e.getName().startsWith("s"))
                 .collect(Collectors.toList());
 
-        System.out.println("Employee details after sorting: ");
+        System.out.println("Employee details starting with letter s: ");
         for (Employee e : findName) {
             System.out.print(e.getId() + " " + e.getName() + " " + e.getEmail());
             System.out.println();
