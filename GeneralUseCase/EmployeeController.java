@@ -26,5 +26,9 @@ public class EmployeeController {
             System.out.print(e.getId() + " " + e.getName() + " " + e.getEmail());
             System.out.println();
         }
+
+        List<Employee> findName = list.stream()
+                .filter(e -> e.getName().startsWith("s"))
+                .collect(Collectors.toList());
     }
 }
