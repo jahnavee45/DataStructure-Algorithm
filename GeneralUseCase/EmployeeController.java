@@ -30,5 +30,10 @@ public class EmployeeController {
         List<Employee> findName = list.stream()
                 .filter(e -> e.getName().startsWith("s"))
                 .collect(Collectors.toList());
+        
+        for(Employee e : findName){
+            System.out.print(e.getId() + " " + e.getName() + " " + e.getEmail());
+            System.out.println();
+        }
     }
 }
