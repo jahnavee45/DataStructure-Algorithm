@@ -34,7 +34,7 @@ public class EmployeeController {
 
         if(secondLargestSalary.size() > 1){
             Employee e = secondLargestSalary.get(1);
-            System.out.println("The second largest salary is of " + e.getName() + " with " + e.getSalary());
+            System.out.println("\nThe second largest salary is of " + e.getName() + " with " + e.getSalary());
         }
         System.out.println();
         List<Employee> findName = list.stream()
