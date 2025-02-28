@@ -32,7 +32,10 @@ public class EmployeeController {
         .sorted((e1, e2) -> Integer.compare(e2.getSalary(), e1.getSalary()))
         .collect(Collectors.toList());
 
-
+        if(secondLargestSalary.size() > 1){
+            Employee e = secondLargestSalary.get(1);
+            System.out.println("The second largest salary is of " + e.getName() + " with " + e.getSalary());
+        }
         System.out.println();
         List<Employee> findName = list.stream()
                 .filter(e -> e.getName().startsWith("s"))
