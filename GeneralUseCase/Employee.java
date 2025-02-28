@@ -2,9 +2,9 @@ public class Employee {
     private int id;
     private String name;
     private String email;
-    private String salary;
+    private int salary;
 
-    public Employee(int id, String name, String email, String salary){
+    public Employee(int id, String name, String email, int salary){
         this.id = id;
         this.name = name;
         this.email = email;
@@ -23,7 +23,7 @@ public class Employee {
         return email;
     }
 
-    public String getSalary(){
+    public int getSalary(){
         return salary;
     }
 }
