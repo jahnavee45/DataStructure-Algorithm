@@ -13,7 +13,7 @@ public class EmployeeController {
 
         System.out.println("Employee details without sorting: ");
         for (Employee e : list) {
-            System.out.print(e.getId() + " " + e.getName() + " " + e.getEmail());
+            System.out.print(e.getId() + " " + e.getName() + " " + e.getEmail() + " " + e.getSalary());
             System.out.println();
         }
         System.out.println();
@@ -24,7 +24,7 @@ public class EmployeeController {
 
         System.out.println("Employee details after sorting: ");
         for (Employee e : sortedList) {
-            System.out.print(e.getId() + " " + e.getName() + " " + e.getEmail());
+            System.out.print(e.getId() + " " + e.getName() + " " + e.getEmail() + " " + e.getSalary());
             System.out.println();
         }
 
@@ -35,7 +35,7 @@ public class EmployeeController {
 
         System.out.println("Employee details starting with letter s: ");
         for (Employee e : findName) {
-            System.out.print(e.getId() + " " + e.getName() + " " + e.getEmail());
+            System.out.print(e.getId() + " " + e.getName() + " " + e.getEmail() + " " + e.getSalary());
             System.out.println();
         }
     }
