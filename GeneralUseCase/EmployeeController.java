@@ -6,10 +6,10 @@ import java.util.stream.Collectors;
 public class EmployeeController {
     public static void main(String[] args) {
         ArrayList<Employee> list = new ArrayList<>();
-        list.add(new Employee(1, "mike", "mike@gmail.com"));
-        list.add(new Employee(2, "smith", "smith@gmail.com"));
-        list.add(new Employee(3, "stallin", "stallin@gmail.com"));
-        list.add(new Employee(4, "jack", "jack@gmail.com"));
+        list.add(new Employee(1, "mike", "mike@gmail.com", "18000"));
+        list.add(new Employee(2, "smith", "smith@gmail.com", "20000"));
+        list.add(new Employee(3, "stallin", "stallin@gmail.com", "18000"));
+        list.add(new Employee(4, "jack", "jack@gmail.com", " 22000"));
 
         System.out.println("Employee details without sorting: ");
         for (Employee e : list) {
