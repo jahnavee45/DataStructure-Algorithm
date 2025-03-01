@@ -22,7 +22,7 @@ public class EmployeeController {
                 .sorted(Comparator.comparing(Employee::getName))
                 .collect(Collectors.toList());
 
-        System.out.println("Employee details after sorting: ");
+        System.out.println("Employee details after sorting according to names: ");
         for (Employee e : sortedList) {
             System.out.print(e.getId() + " " + e.getName() + " " + e.getEmail() + " " + e.getSalary());
             System.out.println();
