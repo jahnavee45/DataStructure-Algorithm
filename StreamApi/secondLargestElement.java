@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -18,8 +19,12 @@ public class secondLargestElement {
 
         List<Integer> sortedList = list.stream()
         .distinct()
-        .sorted()
+        .sorted(Comparator.reverseOrder())
         .collect(Collectors.toList());
         System.out.println("After sorting: " + sortedList);
+
+        if(sortedList.size() > 1){
+            System.out.println("Second largest element is: " + sortedList.get(1));
+        }
     }
 }
