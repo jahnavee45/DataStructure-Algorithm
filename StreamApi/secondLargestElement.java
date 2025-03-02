@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class secondLargestElement {
     public static void main(String[] args) {
@@ -14,5 +15,11 @@ public class secondLargestElement {
         list.add(0);
 
         System.out.println("Before sorting: " + list);
+
+        List<Integer> sortedList = list.stream()
+        .distinct()
+        .sorted()
+        .collect(Collectors.toList());
+        System.out.println("After sorting: " + sortedList);
     }
 }
