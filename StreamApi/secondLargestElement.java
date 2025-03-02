@@ -18,12 +18,12 @@ public class secondLargestElement {
         System.out.println("Before sorting: " + list);
 
         List<Integer> sortedList = list.stream()
-        .distinct()
-        .sorted(Comparator.reverseOrder())
-        .collect(Collectors.toList());
+                .distinct()
+                .sorted(Comparator.reverseOrder())
+                .collect(Collectors.toList());
         System.out.println("After sorting: " + sortedList);
 
-        if(sortedList.size() > 1){
+        if (sortedList.size() > 1) {
             System.out.println("Second largest element is: " + sortedList.get(1));
         }
     }
