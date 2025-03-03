@@ -16,6 +16,7 @@ public class evenOdd {
         }
        }
 
-       System.out.println();;
+       System.out.println("Even numbers: " + even);
+       System.out.println("Odd numbers: " + odd);
     }
 }
