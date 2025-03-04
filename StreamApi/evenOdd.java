@@ -24,6 +24,7 @@ public class evenOdd {
         List<Integer> oddNum = list.stream().filter(e -> e%2 != 0).collect(Collectors.toList());
 
         System.out.println("Even numbers: " + evenNum);
+        System.out.println("Odd numbers: " + oddNum);
 
     }
 }
