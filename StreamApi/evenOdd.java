@@ -20,5 +20,10 @@ public class evenOdd {
         System.out.println("Even numbers are: " + even);
         System.out.println("Odd numbers are: " + odd);
 
+        List<Integer> evenNum = list.stream().filter(e -> e%2 == 0).collect(Collectors.toList());
+        List<Integer> oddNum = list.stream().filter(e -> e%2 != 0).collect(Collectors.toList());
+
+        
+
     }
 }
