@@ -22,12 +22,12 @@ public class evenOdd {
         System.out.println("Odd numbers are: " + odd);
 
         List<Integer> evenNum = list.stream()
-        .filter(e -> e % 2 == 0)
-        .collect(Collectors.toList());
+                .filter(e -> e % 2 == 0)
+                .collect(Collectors.toList());
 
         List<Integer> oddNum = list.stream()
-        .filter(e -> e % 2 != 0)
-        .collect(Collectors.toList());
+                .filter(e -> e % 2 != 0)
+                .collect(Collectors.toList());
 
         System.out.println("Even numbers: " + evenNum);
         System.out.println("Odd numbers: " + oddNum);
