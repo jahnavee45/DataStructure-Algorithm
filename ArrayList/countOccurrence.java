@@ -1,10 +1,7 @@
 import java.util.ArrayList;
-import java.util.List;
 import java.util.HashMap;
 
 public class countOccurrence {
-    private static final String List = null;
-    
         public static void main(String[] args) {
             ArrayList<Integer> arr = new ArrayList<>();
             arr.add(3);
@@ -14,11 +11,10 @@ public class countOccurrence {
             arr.add(1);
             arr.add(4);
     
-            List<Integer> list = majorityEle(arr);
-            System.out.println("Majority element are: " + list);
+            majorityEle(arr);
     }
 
-    public static ArrayList<Integer> majorityEle(ArrayList<Integer> arr){
+    public static void majorityEle(ArrayList<Integer> arr){
         int floor = (int)Math.floor(arr.size()/3);
 
         ArrayList<Integer> list = new ArrayList<>();
@@ -37,6 +33,6 @@ public class countOccurrence {
                 list.add(v);
             }
         }
-        return list;
+        System.out.println("Majority element are: " + list);
     }
 }
