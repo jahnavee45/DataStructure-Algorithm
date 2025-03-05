@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-
+import java.util.List;
 public class countOccurrence {
     private static final String List = null;
     
@@ -14,5 +14,9 @@ public class countOccurrence {
     
             List<Integer> list = majorityEle(arr);
             System.out.println("Majority element are: " + list);
+    }
+
+    public static ArrayList<Integer> majorityEle(ArrayList<Integer> arr){
+        
     }
 }
