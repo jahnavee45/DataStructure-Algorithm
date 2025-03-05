@@ -10,11 +10,13 @@ public class countOccurrence {
             arr.add(3);
             arr.add(1);
             arr.add(4);
+            arr.add(2);
     
-            majorityEle(arr);
+            ArrayList<Integer> list = majorityEle(arr);
+            System.out.println("Majority element are: " + list);
     }
 
-    public static void majorityEle(ArrayList<Integer> arr){
+    public static ArrayList<Integer> majorityEle(ArrayList<Integer> arr){
         int floor = (int)Math.floor(arr.size()/3);
 
         ArrayList<Integer> list = new ArrayList<>();
@@ -33,6 +35,6 @@ public class countOccurrence {
                 list.add(v);
             }
         }
-        System.out.println("Majority element are: " + list);
+        return list;
     }
 }
