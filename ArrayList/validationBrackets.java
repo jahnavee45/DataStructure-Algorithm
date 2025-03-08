@@ -2,7 +2,7 @@ import java.util.Stack;
 
 public class validationBrackets {
     public static void main(String[] args) {
-        String[] str = {"[", "]", "[", "]"};
+        String[] str = {"[", "]", "[", "]", "{"};
 
         boolean isValid = checkValidation(str);
         System.out.println("The brackets are " + (isValid ? "valid":"not valid"));
