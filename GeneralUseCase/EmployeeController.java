@@ -53,7 +53,7 @@ public class EmployeeController {
             System.out.println();
         }
 
-        System.out.println("Number of male and female employees: ");
+        System.out.println("\nNumber of male and female employees: ");
         Map<String, Long> map = list.stream()
                 .collect(Collectors.groupingBy(Employee::getGender, Collectors.counting()));
         System.out.println(map);
