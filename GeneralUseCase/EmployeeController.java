@@ -6,14 +6,15 @@ import java.util.stream.Collectors;
 public class EmployeeController {
     public static void main(String[] args) {
         ArrayList<Employee> list = new ArrayList<>();
-        list.add(new Employee(1, "mike", "mike@gmail.com", 18000));
-        list.add(new Employee(2, "smith", "smith@gmail.com", 20000));
-        list.add(new Employee(3, "jane", "jane@gmail.com", 18000));
-        list.add(new Employee(4, "jack", "jack@gmail.com",  22000));
+        list.add(new Employee(1, "mike", "mike@gmail.com", 18000, "male"));
+        list.add(new Employee(2, "smith", "smith@gmail.com", 18000, "male"));
+        list.add(new Employee(3, "jane", "jane@gmail.com", 30000, "female"));
+        list.add(new Employee(4, "jack", "jack@gmail.com",  22000, "male"));
+        list.add(new Employee(5, "april", "april@gmail.com",  25000, "female"));
 
         System.out.println("Employee details without sorting: ");
         for (Employee e : list) {
-            System.out.print(e.getId() + " " + e.getName() + " " + e.getEmail() + " " + e.getSalary());
+            System.out.print(e.getId() + " " + e.getName() + " " + e.getEmail() + " " + e.getSalary() + " " + e.getGender());
             System.out.println();
         }
         System.out.println();
@@ -24,7 +25,7 @@ public class EmployeeController {
 
         System.out.println("Employee details after sorting according to names: ");
         for (Employee e : sortedList) {
-            System.out.print(e.getId() + " " + e.getName() + " " + e.getEmail() + " " + e.getSalary());
+            System.out.print(e.getId() + " " + e.getName() + " " + e.getEmail() + " " + e.getSalary() + " " + e.getGender());
             System.out.println();
         }
 
@@ -34,7 +35,7 @@ public class EmployeeController {
 
         if(secondLargestSalary.size() > 1){
             Employee e = secondLargestSalary.get(1);
-            System.out.println("\nThe second largest salary is of " + e.getName() + " with " + e.getSalary());
+            System.out.println("\nThe second largest salary is of " + e.getName() + " with " + e.getSalary() + " " + e.getGender());
         }
         System.out.println();
         List<Employee> findName = list.stream()
@@ -43,7 +44,7 @@ public class EmployeeController {
 
         System.out.println("Employee details starting with letter s: ");
         for (Employee e : findName) {
-            System.out.print(e.getId() + " " + e.getName() + " " + e.getEmail() + " " + e.getSalary());
+            System.out.print(e.getId() + " " + e.getName() + " " + e.getEmail() + " " + e.getSalary() + " " + e.getGender());
             System.out.println();
         }
     }
