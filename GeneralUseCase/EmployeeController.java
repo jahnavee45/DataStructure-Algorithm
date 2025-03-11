@@ -48,8 +48,11 @@ public class EmployeeController {
 
         System.out.println("Employee details starting with letter s: ");
         for (Employee e : findName) {
-            System.out.print(
-                    e.getId() + " " + e.getName() + " " + e.getEmail() + " " + e.getSalary() + " " + e.getGender());
+            System.out.print("Id: " + e.getId() +
+                            "\nName: " + e.getName() +
+                            "\nEmail: " + e.getEmail() +
+                            "\nSalary: " + e.getSalary() +
+                            "\nGender: " + e.getGender());
             System.out.println();
         }
 
