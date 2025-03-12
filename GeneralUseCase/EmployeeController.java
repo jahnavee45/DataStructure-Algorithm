@@ -30,7 +30,8 @@ public class EmployeeController {
             System.out.print("Id: " + e.getId() + 
             "\nName: " + e.getName() + 
             "\nEmail: " + e.getEmail() + 
-            "\nSalary: " + e.getSalary() + " " + e.getGender());
+            "\nSalary: " + e.getSalary() + 
+            "\nGender: " + e.getGender());
             System.out.println();
         }
 
