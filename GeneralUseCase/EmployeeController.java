@@ -27,7 +27,7 @@ public class EmployeeController {
 
         System.out.println("Employee details after sorting according to names: ");
         for (Employee e : sortedList) {
-            System.out.print("Id: " + e.getId() + 
+            System.out.print("\nId: " + e.getId() + 
             "\nName: " + e.getName() + 
             "\nEmail: " + e.getEmail() + 
             "\nSalary: " + e.getSalary() + 
