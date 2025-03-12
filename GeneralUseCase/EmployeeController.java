@@ -15,8 +15,11 @@ public class EmployeeController {
 
         System.out.println("Employee details without sorting: ");
         for (Employee e : list) {
-            System.out.print(
-                    e.getId() + " " + e.getName() + " " + e.getEmail() + " " + e.getSalary() + " " + e.getGender());
+            System.out.print("\nId: " + e.getId() + 
+            "\nName: " + e.getName() + 
+            "\nEmail: " + e.getEmail() + 
+            "\nSalary: " + e.getSalary() + 
+            "\nGender: " + e.getGender());
             System.out.println();
         }
         System.out.println();
