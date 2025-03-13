@@ -67,5 +67,7 @@ public class EmployeeController {
                 .collect(Collectors.groupingBy(Employee::getGender, Collectors.counting()));
         System.out.println(map);
 
+        System.out.println("Avarage of male and female: ");
+
     }
 }
