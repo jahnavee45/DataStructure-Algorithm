@@ -70,9 +70,10 @@ public class EmployeeController {
                 .collect(Collectors.groupingBy(Employee::getGender, Collectors.counting()));
         System.out.println(map);
 
-        System.out.println("Avarage of male and female: ");
+        System.out.println("Avarage age of male and female: ");
         Map<String, Double> avgMap = list.stream()
         .collect(Collectors.groupingBy(Employee::getGender, Collectors.averagingInt(Employee::getAge)));
+        System.out.println(avgMap);
 
     }
 }
