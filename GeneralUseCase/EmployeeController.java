@@ -7,11 +7,11 @@ import java.util.stream.Collectors;
 public class EmployeeController {
     public static void main(String[] args) {
         ArrayList<Employee> list = new ArrayList<>();
-        list.add(new Employee(1, "mike", "mike@gmail.com", 18000, "male"));
-        list.add(new Employee(2, "smith", "smith@gmail.com", 18000, "male"));
-        list.add(new Employee(3, "jane", "jane@gmail.com", 30000, "female"));
-        list.add(new Employee(4, "jack", "jack@gmail.com", 22000, "male"));
-        list.add(new Employee(5, "april", "april@gmail.com", 25000, "female"));
+        list.add(new Employee(1, "mike", "mike@gmail.com", 18000, "male", 32));
+        list.add(new Employee(2, "smith", "smith@gmail.com", 18000, "male", 35));
+        list.add(new Employee(3, "jane", "jane@gmail.com", 30000, "female", 25));
+        list.add(new Employee(4, "jack", "jack@gmail.com", 22000, "male", 28));
+        list.add(new Employee(5, "april", "april@gmail.com", 25000, "female", 26));
 
         System.out.println("Employee details without sorting: ");
         for (Employee e : list) {
@@ -19,7 +19,8 @@ public class EmployeeController {
             "\nName: " + e.getName() + 
             "\nEmail: " + e.getEmail() + 
             "\nSalary: " + e.getSalary() + 
-            "\nGender: " + e.getGender());
+            "\nGender: " + e.getGender() +
+            "\nAge: " + e.getAge());
             System.out.println();
         }
         System.out.println();
@@ -34,7 +35,8 @@ public class EmployeeController {
             "\nName: " + e.getName() + 
             "\nEmail: " + e.getEmail() + 
             "\nSalary: " + e.getSalary() + 
-            "\nGender: " + e.getGender());
+            "\nGender: " + e.getGender() +
+            "\nAge: " + e.getAge());
             System.out.println();
         }
 
@@ -58,7 +60,8 @@ public class EmployeeController {
                             "\nName: " + e.getName() +
                             "\nEmail: " + e.getEmail() +
                             "\nSalary: " + e.getSalary() +
-                            "\nGender: " + e.getGender());
+                            "\nGender: " + e.getGender() +
+                            "\nAge: " + e.getAge());
             System.out.println();
         }
 
