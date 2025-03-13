@@ -68,12 +68,20 @@ public class EmployeeController {
         System.out.println("\nNumber of male and female employees: ");
         Map<String, Long> map = list.stream()
                 .collect(Collectors.groupingBy(Employee::getGender, Collectors.counting()));
-        System.out.println(map);
+        System.out.println(map + "\n");
 
         System.out.println("Avarage age of male and female: ");
         Map<String, Double> avgMap = list.stream()
         .collect(Collectors.groupingBy(Employee::getGender, Collectors.averagingInt(Employee::getAge)));
-        System.out.println(avgMap);
+        System.out.println(avgMap + "\n");
 
+        List<Employee> oldestEmp = list.stream()
+        .sorted((e1, e2) -> Integer.compare(e2.getAge(), e1.getAge()))
+        .collect(Collectors.toList());
+
+        if (oldestEmp.size() > 1) {
+            Employee e = oldestEmp.get(0);
+            System.out.println("Oldest employee is " + e.getName());
+        }
     }
 }
