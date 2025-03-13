@@ -13,6 +13,7 @@ public class EmployeeController {
         list.add(new Employee(4, "jack", "jack@gmail.com", 22000, "male", 28));
         list.add(new Employee(5, "april", "april@gmail.com", 25000, "female", 26));
 
+        // employee details without sorting
         System.out.println("Employee details without sorting: ");
         for (Employee e : list) {
             System.out.print("\nId: " + e.getId() + 
@@ -25,6 +26,7 @@ public class EmployeeController {
         }
         System.out.println();
 
+         //sorting according to name
         List<Employee> sortedList = list.stream()
                 .sorted(Comparator.comparing(Employee::getName))
                 .collect(Collectors.toList());
@@ -40,6 +42,7 @@ public class EmployeeController {
             System.out.println();
         }
 
+        // finding second largest salary
         List<Employee> secondLargestSalary = list.stream()
                 .sorted((e1, e2) -> Integer.compare(e2.getSalary(), e1.getSalary()))
                 .collect(Collectors.toList());
@@ -50,6 +53,8 @@ public class EmployeeController {
                     + e.getGender());
         }
         System.out.println();
+
+        // finding name starts with 's'
         List<Employee> findName = list.stream()
                 .filter(e -> e.getName().startsWith("s"))
                 .collect(Collectors.toList());
@@ -65,16 +70,19 @@ public class EmployeeController {
             System.out.println();
         }
 
+        // count of male and female eployees
         System.out.println("\nNumber of male and female employees: ");
         Map<String, Long> map = list.stream()
                 .collect(Collectors.groupingBy(Employee::getGender, Collectors.counting()));
         System.out.println(map + "\n");
 
+        // average age of male and female employees
         System.out.println("Avarage age of male and female: ");
         Map<String, Double> avgMap = list.stream()
         .collect(Collectors.groupingBy(Employee::getGender, Collectors.averagingInt(Employee::getAge)));
         System.out.println(avgMap + "\n");
 
+        // finding oldest employee
         List<Employee> oldestEmp = list.stream()
         .sorted((e1, e2) -> Integer.compare(e2.getAge(), e1.getAge()))
         .collect(Collectors.toList());
