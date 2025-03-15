@@ -92,13 +92,5 @@ public class EmployeeController {
             Employee e = oldestEmp.get(0);
             System.out.println("Oldest employee is " + e.getName());
         }
-
-        // highest paid female employee
-        String highPaidFemale;
-        for(String s : map.keySet()){
-            if (s == "female") {
-                
-            }
-        }
     }
 }
