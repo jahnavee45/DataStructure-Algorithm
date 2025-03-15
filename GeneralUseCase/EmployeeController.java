@@ -12,6 +12,7 @@ public class EmployeeController {
         list.add(new Employee(3, "jane", "jane@gmail.com", 30000, "female", 25));
         list.add(new Employee(4, "jack", "jack@gmail.com", 22000, "male", 28));
         list.add(new Employee(5, "april", "april@gmail.com", 25000, "female", 26));
+        list.add(new Employee(5, "jenny", "jenny@gmail.com", 29000, "female", 27));
 
         // employee details without sorting
         System.out.println("Employee details without sorting: ");
