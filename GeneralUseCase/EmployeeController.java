@@ -94,6 +94,11 @@ public class EmployeeController {
         }
 
         // highest paid female employee
-        
+        String highPaidFemale;
+        for(String s : map.keySet()){
+            if (s == "female") {
+                
+            }
+        }
     }
 }
