@@ -1,4 +1,4 @@
-package BankOperations;
+
 import java.util.Scanner;
 
 public class cashWithdraw {

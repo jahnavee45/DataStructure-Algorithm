@@ -1,6 +1,5 @@
+package BankOperations;
 import java.util.Scanner;
-
-import BankOperations.BankAccount;
 
 public class Transaction {
     public static void main(String[] args) {
