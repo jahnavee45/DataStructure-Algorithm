@@ -1,3 +1,3 @@
 # DataStructure-Algorithm
 
-## This is a complete roadmap of DSA problems using java
+ A complete list of Java programs to prepare for Technical Interview coding rounds.
