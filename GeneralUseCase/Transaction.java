@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import BankOperations.BankAccount;
+
 public class Transaction {
     public static void main(String[] args) {
         BankAccount bank = new BankAccount(1234567, 25000.78);
