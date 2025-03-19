@@ -4,7 +4,6 @@ public class ChangeZerotoOne {
 
         System.out.println("Before converting: ");
         printArray(arr);
-
         convert(arr);
         System.out.println("\nAfter converting: ");
         printArray(arr);
