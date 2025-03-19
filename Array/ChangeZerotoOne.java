@@ -21,6 +21,9 @@ public class ChangeZerotoOne {
             if(arr[i] == 0){
                 arr[i] = 1;
             }
+            else if(arr[i] == 1){
+                arr[i] = 0;
+            }
         }
     }
 }
