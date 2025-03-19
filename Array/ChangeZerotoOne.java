@@ -6,7 +6,7 @@ public class ChangeZerotoOne {
         printArray(arr);
 
         convert(arr);
-        System.out.println("After converting: ");
+        System.out.println("\nAfter converting: ");
         printArray(arr);
     }
 
@@ -17,9 +17,9 @@ public class ChangeZerotoOne {
     }
 
     public static void convert(int[] arr){
-        for(int i : arr){
-            if(i == 0){
-                i = 1;
+        for(int i = 0; i < arr.length; i++){
+            if(arr[i] == 0){
+                arr[i] = 1;
             }
         }
     }
