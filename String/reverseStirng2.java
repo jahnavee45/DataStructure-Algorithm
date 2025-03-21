@@ -10,6 +10,12 @@ public class reverseStirng2 {
             ch[j++] = str.charAt(i);
         }
         String str1 = new String(ch);
-        System.out.println(str1);
+        System.out.println("Using character array\n:" + str1);
+
+        StringBuilder res = new StringBuilder();
+        for(int i = str.length() - 1; i >=0; i--){
+            res.append(str.charAt(i));
+        }
+        System.out.println("Using StringBuilder\n:" + res.toString());
     }
 }
