@@ -19,7 +19,7 @@ public class rotateList {
         }
 
         Node curr = head;
-        int len = 1;
+        int len = 0;
 
         while(curr.next != null){
             curr = curr.next;
