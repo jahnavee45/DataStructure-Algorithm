@@ -17,6 +17,6 @@ public class maxSumSubarray {
         int[] a = {-2,-3,4,-1,-2,1,5,-3};
         int n = a.length;
 
-        System.out.println("Largest contiguous sum of subarray is " + findSum(a, n));
+        System.out.println("Largest contiguous sum of subarray: " + findSum(a, n));
     }
 }
