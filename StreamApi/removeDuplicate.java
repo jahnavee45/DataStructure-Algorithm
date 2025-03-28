@@ -10,8 +10,8 @@ public class removeDuplicate {
         System.out.println("Before removing duplicates: " + list);
 
         List<Integer> list1 = list.stream()
-        .distinct()
-        .collect(Collectors.toList());
+                .distinct()
+                .collect(Collectors.toList());
         System.out.println("After removing duplicates: " + list1);
     }
 }
