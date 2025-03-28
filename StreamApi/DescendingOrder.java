@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
 public class DescendingOrder {
     public static void main(String[] args) {
         List<Integer> list = Arrays.asList(2, 1, 4, 6, 3, 0);
+        System.out.println("Before reversing: " + list);
 
         List<Integer> order = list.stream()
         .sorted(Comparator.reverseOrder())
