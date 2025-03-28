@@ -11,8 +11,8 @@ public class DescendingOrder {
         System.out.println("Before reversing: " + list);
 
         List<Integer> order = list.stream()
-        .sorted(Comparator.reverseOrder())
-        .collect(Collectors.toList());
+                .sorted(Comparator.reverseOrder())
+                .collect(Collectors.toList());
         System.out.println("After reversing: " + order);
     }
 }
