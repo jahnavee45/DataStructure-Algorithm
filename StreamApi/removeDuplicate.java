@@ -1,11 +1,16 @@
 package StreamApi;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class removeDuplicate {
     public static void main(String[] args) {
-        int[] arr = {1, 2, 2, 3, 4, 3};
+        List<Integer> list = Arrays.asList(1, 2, 2, 3, 4, 3);
         
+        List<Integer> list1 = list.stream()
+        .distinct()
+        .collect(Collectors.toList());
+        System.out.println("After removing duplicates: " + list1);
     }
 }
