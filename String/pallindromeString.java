@@ -1,5 +1,3 @@
-package String;
-
 public class pallindromeString {
     public static void main(String[] args) {
         String s = "abba";

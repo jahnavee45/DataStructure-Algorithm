@@ -1,5 +1,3 @@
-package String;
-
 public class words {
     public static void main(String[] args) {
         String st = "hello world";

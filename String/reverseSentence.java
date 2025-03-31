@@ -1,5 +1,3 @@
-package String;
-
 public class reverseSentence {
     public static void main(String[] args) {
         String s = "sky is blue";
