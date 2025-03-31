@@ -1,4 +1,3 @@
-package String;
 
 public class reverseStirng2 {
     public static void main(String[] args) {
