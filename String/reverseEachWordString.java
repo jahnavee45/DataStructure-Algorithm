@@ -4,7 +4,7 @@ public class reverseEachWordString {
     }
 
     public static void reverseWord(String str){
-        String [] words = str.split("//s");
+        String [] words = str.split(" ");
         String revStr = "";
         for(String word : words){
             String revWord = "";
