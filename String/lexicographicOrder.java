@@ -3,4 +3,11 @@ public class lexicographicOrder {
         String[] str = {"bde","dcf", "ght"};
         int count = countUnsortedOrder(str);
     }
+
+    public static int countUnsortedOrder(String[] str){
+        int m = str.length;
+        String s = str[0];
+        int n = s.length();
+        
+    }
 }
