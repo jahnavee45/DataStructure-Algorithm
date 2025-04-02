@@ -2,7 +2,7 @@ public class lexicographicOrder {
     public static void main(String[] args) {
         String[] str = {"bde","dcf", "ght"};
         int count = countUnsortedOrder(str);
-        
+        System.out.println(count);
     }
 
     public static int countUnsortedOrder(String[] str){
@@ -27,7 +27,7 @@ public class lexicographicOrder {
         int count = 0;
         for(int j = 0; j < n; j++){
             boolean isSorted = true;
-            for(int i = 0; i < m; i++){
+            for(int i = 0; i < m-1; i++){
                 if(ch[i][j] > ch[i+1][j]){
                     isSorted = false;
                     break;
