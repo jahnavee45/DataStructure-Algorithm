@@ -9,8 +9,8 @@ public class lexicographicOrder {
         int m = str.length;
         String st = str[0];
         int n = st.length();
-
         char[][] ch = new char[m][n]; 
+        
         for(String s: str){
             if(s.length() != n){
                 return 0;
