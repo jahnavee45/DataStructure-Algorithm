@@ -1,6 +1,6 @@
 public class reverseEachWordString {
     public static void main(String[] args) {
-        reverseWord("Hello Java");
+        reverseWord("Hello from Java");
     }
 
     public static void reverseWord(String str){
