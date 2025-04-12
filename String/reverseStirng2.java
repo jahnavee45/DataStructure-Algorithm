@@ -1,7 +1,7 @@
 
 public class reverseStirng2 {
     public static void main(String[] args) {
-        String str = "hello world";
+        String str = "hello world in java";
         char[] ch = new char[str.length()];
         int j = 0;
 
