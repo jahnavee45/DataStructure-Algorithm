@@ -1,16 +1,6 @@
 package LinkedList;
 
-class Node{
-    int data;
-    Node next;
-
-    Node(int data){
-        this.data = data;
-        this.next = null;
-    }
-}
-
-public class deleteGivenPosition {
+public class DeleteGivenPosition {
 
     static Node deleteNode(Node head, int pos){
         Node temp = head;

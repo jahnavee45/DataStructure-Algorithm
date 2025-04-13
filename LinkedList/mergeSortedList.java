@@ -3,17 +3,7 @@ package LinkedList;
 import java.util.ArrayList;
 import java.util.Collections;
 
-class Node{
-    int data;
-    Node next;
-
-    Node(int data){
-        this.data = data;
-        this.next = null;
-    }
-}
-
-public class mergeSortedList {
+public class MergeSortedList {
 
     static Node mergeList(Node one, Node two){
 

@@ -1,18 +1,7 @@
 package LinkedList;
 
-class Node{
-    int data;
-    Node next;
-
-    Node(int data)
-    {
-        this.data = data;
-        this.next = null;
-    }
-}
-
 // deleting the last given node
-public class deleteLastNode {
+public class DeleteLastNode {
 
     static Node deleteEndNode(Node head){
 

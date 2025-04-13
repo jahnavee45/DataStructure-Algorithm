@@ -2,17 +2,7 @@ package LinkedList;
 
 import java.util.HashSet;
 
-class Node{
-    int data;
-    Node next;
-
-    Node(int data){
-        this.data = data;
-        this.next = null;
-    }
-}
-
-public class removeDuplicateNodes {
+public class RemoveDuplicateNodes {
 
     static Node findAndRemove(Node head){
         HashSet<Integer> set = new HashSet<>();

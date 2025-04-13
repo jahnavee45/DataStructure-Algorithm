@@ -2,17 +2,7 @@ package LinkedList;
 
 import java.util.Scanner;
 
-class Node{
-    int data;
-    Node next;
-
-    Node(int data){
-        this.data = data;
-        this.next = null;
-    }
-}
-
-public class insertGivenPosition {
+public class InsertGivenPosition {
 
     public static void main(String[] args) {
         Node head = new Node(2);

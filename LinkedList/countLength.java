@@ -1,16 +1,6 @@
 package LinkedList;
 
-class Node {
-    int data;
-    Node next;
-
-    Node(int data) {
-        this.data = data;
-        this.next = null;
-    }
-}
-// counting length of linked list
-public class countLength {
+public class CountLength {
     public static void main(String[] args) {
         Node head = new Node(2);
         head.next = new Node(3);

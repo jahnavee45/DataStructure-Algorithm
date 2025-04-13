@@ -2,17 +2,7 @@ package LinkedList;
 
 import java.util.Scanner;
 
-class Node{
-    int data; 
-    Node next;
-
-    Node(int new_data){
-        this.data = new_data;
-        this.next = null;
-    }
-}
-
-public class insertInBeginning {
+public class InsertInBeginning {
 
     static Node insertNewElement(Node head, int data){
         Node newNode = new Node(data);

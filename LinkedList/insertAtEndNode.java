@@ -1,16 +1,6 @@
 package LinkedList;
 
-class Node{
-    int data;
-    Node next;
-
-    Node(int data){
-        this.data = data;
-        next = null;
-    }
-}
-
-public class insertAtEndNode {
+public class InsertAtEndNode {
 
     static Node insertNewElement(Node head, int data){
         Node newNode = new Node(data);

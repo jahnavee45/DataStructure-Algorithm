@@ -1,16 +1,6 @@
 package LinkedList;
 
-class Node{
-    int data;
-    Node next;
-
-    Node(int data){
-        this.data = data;
-        this.next = null;
-    }
-}
-
-public class swapNodes {
+public class SwapNodes {
 
     static Node swapOperation(Node head, int x, int y){
 
