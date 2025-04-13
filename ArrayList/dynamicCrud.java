@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class dynamicCrud {
+public class DynamicCrud {
     public static void main(String[] args) {
         ArrayList<Integer> a = new ArrayList<>();
         Scanner sc = new Scanner(System.in);

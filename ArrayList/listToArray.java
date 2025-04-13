@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class listToArray {
+public class ListToArray {
     public static void main(String[] args) {
         ArrayList<String> list = new ArrayList<>();
         list.add("Apple");

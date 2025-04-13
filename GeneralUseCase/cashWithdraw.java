@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class cashWithdraw {
+public class CashWithdraw {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

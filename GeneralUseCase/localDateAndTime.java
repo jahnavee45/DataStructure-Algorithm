@@ -2,7 +2,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.ZonedDateTime;
 
-public class localDateAndTime {
+public class LocalDateAndTime {
     public static void main(String[] args) {
 
         // to find local date

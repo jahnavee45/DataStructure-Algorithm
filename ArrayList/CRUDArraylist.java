@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class begin {
+public class CRUDArraylist {
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>();
         list.add(23);

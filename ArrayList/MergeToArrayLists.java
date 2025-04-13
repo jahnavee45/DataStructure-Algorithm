@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class addMoreThanOneElement {
+public class MergeToArrayLists {
     public static void main(String[] args) {
         ArrayList<Integer> list1 = new ArrayList<>();
         list1.add(2);
