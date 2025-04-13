@@ -25,5 +25,7 @@ public class otpGenerator {
         }else{
             System.out.println("Invalid credentials!");
         }
+
+        sc.close();
     }
 }
