@@ -1,10 +1,9 @@
-public class amstrongWithoutLoop {
+public class AmstrongWithoutLoop {
 
     static int returnArmstrong(int n, int sum){
         if(n == 0){
             return sum;
         }
-
         sum = (int) (sum + Math.pow((n%10), 3));
         return returnArmstrong(n/10, sum);
     }

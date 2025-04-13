@@ -1,4 +1,4 @@
-public class countInversions {
+public class CountInversions {
 
     static int findCount(int[] arr, int n){
         int count = 0;
