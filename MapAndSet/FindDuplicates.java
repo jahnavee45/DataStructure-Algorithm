@@ -1,3 +1,4 @@
+package MapAndSet;
 import java.util.HashMap;
 public class FindDuplicates {
     public static void main(String[] args) {

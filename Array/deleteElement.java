@@ -1,4 +1,4 @@
-public class deleteElement {
+public class DeleteElement {
 
     static int findElement(int[] arr, int n, int key){
         int i;

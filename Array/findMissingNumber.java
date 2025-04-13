@@ -1,4 +1,4 @@
-public class findMissingNumber {
+public class FindMissingNumber {
 
     static int findNumber(int[] arr){
         int tsum = 10 * (10 + 1) / 2;

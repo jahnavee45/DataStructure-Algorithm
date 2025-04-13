@@ -14,7 +14,7 @@ public class CountInversions {
         return count;
     }
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 5, 5};
+        int[] arr = {1, 4, 2, 3, 5, 5};
         int n = arr.length;
 
         int res = findCount(arr, n);

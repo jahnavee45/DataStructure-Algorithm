@@ -1,5 +1,5 @@
 import java.util.HashMap;
-public class countTargetSumSubarray {
+public class CountTargetSumSubarray {
 
     public static int stockPairs(int[] a, int target){
         int count = 0;
