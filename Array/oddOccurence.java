@@ -1,4 +1,4 @@
-public class oddOccurence {
+public class OddOccurence {
 
     static int findOddCount(int[] a, int n){
         int count = 0;

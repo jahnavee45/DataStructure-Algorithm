@@ -1,43 +1,41 @@
 package MapAndSet;
-
 import java.util.HashMap;
 
-public class validAnagram {
-    public static void main(String[] args) {
-        String s = "anagram";
-        String t = "nagaram";
+public class ValidAnagram {
 
-        System.out.println(isAnagram(s, t)? "Yes":"No");
-    }
+    static boolean checkAnagram(String s, String c) {
 
-    public static boolean isAnagram(String s, String t){
-        if(s.length() != t.length()){
+        if (s.length() != c.length()) {
             return false;
         }
 
         HashMap<Character, Integer> map = new HashMap<>();
-        for(int i = 0; i < s.length(); i++){
-            if(map.containsKey(s.charAt(i))){
-                map.put(s.charAt(i), map.get(s.charAt(i)) + 1);
-            }
-            else{
-                map.put(s.charAt(i), 1);
-            }
+
+        for (char i : s.toCharArray()) {
+            map.put(i, map.getOrDefault(i, 0) + 1);
         }
 
-        for(int i = 0; i < t.length(); i++){
-            if(!map.containsKey(t.charAt(i))){
-                return false;
-            }else{
-                map.put(t.charAt(i), map.get(t.charAt(i)) - 1);
-            }           
+        for (char i : c.toCharArray()) {
+            map.put(i, map.getOrDefault(i, 0) - 1);
         }
 
-        for(int count : map.values()){
-            if(count != 0){
+        for (int i : map.values()) {
+            if (i != 0) {
                 return false;
             }
         }
         return true;
+    }
+
+    public static void main(String[] args) {
+        String s = "anagram";
+        String c = "nagaram";
+
+        boolean res = checkAnagram(s, c);
+        if(res == true){
+            System.out.println("A valid anagram");
+        }else{
+            System.out.println("Not a valid anagram");
+        }
     }
 }

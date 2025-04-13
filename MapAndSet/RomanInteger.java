@@ -1,6 +1,7 @@
+package MapAndSet;
 import java.util.HashMap;
 
-public class romanInteger {
+public class RomanInteger {
     public static void main(String[] args) {
         String s = "XXVII";
 

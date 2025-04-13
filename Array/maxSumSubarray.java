@@ -1,4 +1,4 @@
-public class maxSumSubarray {
+public class MaxSumSubarray {
 
     static int findSum(int[] a, int n){
         int max_ending = 0;

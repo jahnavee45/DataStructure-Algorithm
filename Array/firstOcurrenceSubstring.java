@@ -1,4 +1,4 @@
-public class firstOcurrenceSubstring {
+public class FirstOcurrenceSubstring {
 
     static int indexOfFirst(String s, String c){
         int a = c.length();

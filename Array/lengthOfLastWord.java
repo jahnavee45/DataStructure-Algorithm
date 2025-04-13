@@ -1,4 +1,4 @@
-public class lengthOfLastWord {
+public class LengthOfLastWord {
 
     static int countLength(String str){
         int count = 0;

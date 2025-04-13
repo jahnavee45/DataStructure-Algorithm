@@ -1,4 +1,4 @@
-public class insertInSortedArray {
+public class InsertInSortedArray {
     static int insertOperation(int[] arr, int n, int cap, int key){
         if(n >= cap){
             return n;

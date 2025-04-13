@@ -1,4 +1,4 @@
-public class print0sand1s {
+public class Print0sand1s {
 
     static void sortOperation(int[] a, int n) {
         int count = 0;

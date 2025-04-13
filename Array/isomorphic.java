@@ -1,4 +1,4 @@
-public class isomorphic {
+public class Isomorphic {
     public static void main(String[] args) {
         String s = "egg";
         String t = "abb";

@@ -1,4 +1,4 @@
-public class integerRoman {
+public class IntegerRoman {
     public static void main(String[] args) {
         int n = 927;
 

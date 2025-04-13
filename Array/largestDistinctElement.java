@@ -1,4 +1,4 @@
-public class largestDistinctElement {
+public class LargestDistinctElement {
     public static void main(String[] args) {
         int[] arr = {10, 2, 3, 3, 9, 4, 2};
         findThreeLargest(arr);

@@ -1,4 +1,4 @@
-public class sumOfNTerms {
+public class SumOfNTerms {
 
     static int findMissingTerm(int[] a, int n){
         int sum = 0, arrSum = 0;

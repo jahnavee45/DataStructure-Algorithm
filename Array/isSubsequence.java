@@ -1,4 +1,4 @@
-public class isSubsequence {
+public class IsSubsequence {
 
     static boolean checkIfPresent(String s, String c){
         int i = 0, j = 0;

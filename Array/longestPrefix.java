@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class longestPrefix {
+public class LongestPrefix {
 
     static String findPrefix(String[] s){
         StringBuffer st = new StringBuffer();

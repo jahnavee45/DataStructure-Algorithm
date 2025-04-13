@@ -1,6 +1,6 @@
 // Rotate the given array by k steps
 
-public class rotateArray {
+public class RotateArray {
 
     static void reverse(int[] a, int i, int j){
 

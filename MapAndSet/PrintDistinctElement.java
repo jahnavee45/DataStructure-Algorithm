@@ -1,8 +1,9 @@
+package MapAndSet;
 
 
 import java.util.HashMap;
 
-public class printDistinctElement {
+public class PrintDistinctElement {
 
     static void findDistinct(int[] arr, int n) {
         HashMap<Integer, Integer> map = new HashMap<>();

@@ -1,4 +1,4 @@
-public class insertAnywhere {
+public class InsertAnywhere {
     static void insertElements(int[] arr, int n, int pos, int key){
         for(int i = n-1 ; i >= pos; i--){
             arr[i+1] = arr[i];

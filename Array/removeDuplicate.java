@@ -1,22 +1,7 @@
-public class removeDuplicate {
+public class RemoveDuplicate {
 
     static int removeOperation(int[] a){
-
-        // using hashmap
-        // HashMap<Integer, Integer> map = new HashMap<>();
-        // int n = 0;
-        // for(int i = 0; i < a.length; i++){
-        //     if(!map.containsKey(a[i])){
-        //         map.put(a[i], i);
-        //         a[n++] = a[i];
-        //     }
-        // }
-
-        // return n;
-
-        // using for loop
         int n = 0;
-		
 		for(int i = 0; i < a.length-1; i++) {
 			if(a[i] != a[i+1]) {
 				a[n++] = a[i];
