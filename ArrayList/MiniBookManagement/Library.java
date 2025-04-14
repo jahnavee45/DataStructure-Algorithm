@@ -8,6 +8,7 @@ public class Library {
         books.add(new Book("C++", "IT"));
         books.add(new Book("Python", "Software"));
         books.add(new Book("AWS", "Cloud"));
+        books.add(new Book("Azure", "Cloud"));
 
         Library lib = new Library();
         Scanner sc = new Scanner(System.in);
