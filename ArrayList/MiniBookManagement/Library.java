@@ -9,7 +9,7 @@ public class Library {
         books.add(new Book("Python", "Software"));
         books.add(new Book("AWS", "Cloud"));
         books.add(new Book("Azure", "Cloud"));
-        books.add(new Book("Spring Boot", "Cloud"));
+        books.add(new Book("Spring Boot", "Enterprise Application"));
 
         Library lib = new Library();
         Scanner sc = new Scanner(System.in);
