@@ -1,7 +1,7 @@
 public class ArrayInsertion {
     public static void main(String[] args) {
         String [] a = {"two", "four", "six", "nine"};
-        int pos = 1; String ele = "one";
+        int pos = 2; String ele = "one";
 
         for(int i = a.length - 1; i > pos - 1; i--){
             a[i] = a[i-1];
