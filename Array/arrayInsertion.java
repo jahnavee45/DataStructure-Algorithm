@@ -1,4 +1,4 @@
-public class ArrayInsertion {
+public class arrayInsertion {
     public static void main(String[] args) {
         String [] a = {"two", "four", "six", "nine"};
         int pos = 2; String ele = "one";

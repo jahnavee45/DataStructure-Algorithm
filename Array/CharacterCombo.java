@@ -1,4 +1,4 @@
-public class CharacterCombo {
+public class characterCombo {
     public static void main(String[] args) {
         String str1 = "";
         String str2 = "";

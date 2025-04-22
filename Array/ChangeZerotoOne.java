@@ -1,4 +1,4 @@
-public class ChangeZerotoOne {
+public class changeZerotoOne {
     public static void main(String[] args) {
         int[] arr = {0, 1, 0, 1, 0, 1, 1, 0};
 
