@@ -1,6 +1,6 @@
 public class ChangeZerotoOne {
     public static void main(String[] args) {
-        int[] arr = {1, 0, 1, 0, 1, 1, 0};
+        int[] arr = {0, 1, 0, 1, 0, 1, 1, 0};
 
         System.out.println("Before converting: ");
         printArray(arr);
