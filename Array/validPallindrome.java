@@ -1,4 +1,4 @@
-public class ValidPallindrome {
+public class validPallindrome {
 
     static boolean checkPallindrome(String s){
         s = s.replaceAll("\\p{Punct}", "");

@@ -1,4 +1,4 @@
-public class InsertAtEnd {
+public class insertAtEnd {
 
     public static int insertElementAtEnd(int[] arr, int n, int key, int cap){
         if(n == cap-1){

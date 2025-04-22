@@ -1,4 +1,4 @@
-public class MultiplicationMatrix {
+public class multiplicationMatrix {
     public static void main(String[] args) {
         int[][] a1 = {{1, 2}, {2, 3}};
         int[][] a2 = {{1, 2}, {2, 3}};

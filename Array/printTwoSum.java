@@ -1,4 +1,4 @@
-public class PrintTwoSum {
+public class printTwoSum {
 
     static int findTwoSum(int[] a, int n, int k){
         for(int i = 0; i < n; i++){

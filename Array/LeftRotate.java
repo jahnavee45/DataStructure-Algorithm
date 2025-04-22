@@ -1,4 +1,4 @@
-public class LeftRotate {
+public class leftRotate {
     public static void main(String[] args) {
         int[] arr = {10, 20, 30, 40};
         int r = 3;

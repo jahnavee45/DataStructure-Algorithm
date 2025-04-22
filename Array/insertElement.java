@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class InsertElement {
+public class insertElement {
 
     public static void insertOperation(int[] arr, int n, int ele, int idx){
         int[] arr1 = new int[n+1];

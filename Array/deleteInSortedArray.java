@@ -1,4 +1,4 @@
-public class DeleteInSortedArray {
+public class deleteInSortedArray {
     static int findElement(int[] arr, int n, int key){
         int i;
         for(i = 0; i < n; i++){

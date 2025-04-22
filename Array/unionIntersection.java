@@ -1,4 +1,4 @@
-public class UnionIntersection {
+public class unionIntersection {
 
     static int findIntersection(int[] a1, int m, int[] a2, int n){
         int k = 0;

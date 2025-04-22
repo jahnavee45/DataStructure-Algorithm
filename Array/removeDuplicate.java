@@ -1,4 +1,4 @@
-public class RemoveDuplicate {
+public class removeDuplicate {
 
     static int removeOperation(int[] a){
         int n = 0;

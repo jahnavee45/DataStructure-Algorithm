@@ -1,4 +1,4 @@
-public class ReverseArray {
+public class reverseArray {
 
     static void reverseOperation(int[] a, int n, int[] b){
         int i = 0;
