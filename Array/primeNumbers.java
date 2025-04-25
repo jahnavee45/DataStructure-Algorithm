@@ -12,6 +12,7 @@ public class primeNumbers {
             if(count == 1){
                 System.out.print(i + " ");
             }
+            count = 0;
         }
     }
 }
