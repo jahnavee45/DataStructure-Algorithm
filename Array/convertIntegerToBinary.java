@@ -1,6 +1,6 @@
 public class convertIntegerToBinary {
     public static void main(String[] args) {
-        int num = 8;
+        int num = 7;
 
         StringBuilder res= new StringBuilder();
         while(num != 0){
