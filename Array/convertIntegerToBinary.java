@@ -3,7 +3,7 @@ public class convertIntegerToBinary {
         int num = 7;
         StringBuilder res= new StringBuilder();
 
-        System.out.print("Integer: " + num + " after reversing: ");
+        System.out.print("Integer: " + num + " , after converting to binary: ");
         while(num != 0){
             int rem = num % 2;
             res.append(rem);
