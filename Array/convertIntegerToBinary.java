@@ -1,6 +1,6 @@
 public class convertIntegerToBinary {
     public static void main(String[] args) {
-        int num = 7;
+        int num = 71;
         StringBuilder res= new StringBuilder();
 
         System.out.print("Integer: " + num + " , after converting to binary: ");
