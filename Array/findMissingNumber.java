@@ -11,7 +11,7 @@ public class findMissingNumber {
         return tsum - asum;
     }
     public static void main(String[] args) {
-        int[] arr = {1, 2, 4, 5, 6, 7, 8, 9, 10};
+        int[] arr = {1, 2, 3, 5, 6, 7, 8, 9, 10};
 
         System.out.println("Missing number: " + findNumber(arr));
 
