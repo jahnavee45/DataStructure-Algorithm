@@ -27,7 +27,7 @@ public class deleteElement {
     }
 public static void main(String[] args) {
     int [] arr = {5, 2, 6, 3, 7, 4};
-    int key = 1;
+    int key = 2;
     int n = arr.length;
 
     System.out.print("Before deleting: ");
