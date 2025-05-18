@@ -12,16 +12,16 @@ public class removeDuplicate {
     }
 
     static void printElements(int[] a, int n){
-        for(int i = 0; i < n; i++){
-            System.out.print(a[i] + " ");
-        }
+        
     }
     public static void main(String[] args) {
         int[] a = {1, 1, 2, 2, 3, 4, 5, 5};
         int n = a.length;
 
         System.out.print("Before removing duplicates: ");
-        printElements(a, n);
+        for(int i = 0; i < n; i++){
+            System.out.print(a[i] + " ");
+        }
 
         n = removeOperation(a);
         System.out.print("\nAfter removing duplicates: ");
